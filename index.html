@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b09">
+  <meta name="description" content="ATM Territory Maker Version 7 — crea, organizza e trasferisci territori con un flusso moderno e preciso.">
+  <meta property="og:title" content="ATM Territory Maker — Version 7">
+  <meta property="og:description" content="Territory planning, refined. Scopri ATM Version 7 e ATM Bridge.">
+  <meta property="og:image" content="assets/atm-v7-logo.png">
+  <title>ATM Territory Maker — Version 7</title>
+  <link rel="icon" href="assets/atm-v7-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grid" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ATM home">
+      <span class="brand-mark">ATM</span>
+      <span>Territory Maker</span>
+    </a>
+    <nav aria-label="Navigazione principale">
+      <a href="#experience" data-i18n="navExperience">Esperienza</a>
+      <a href="#bridge">ATM Bridge</a>
+      <a href="#version">Version 7</a>
+    </nav>
+    <div class="header-actions">
+      <button class="language" id="languageButton" type="button" aria-label="Change language">IT</button>
+      <a class="button button-small" href="https://atm-v7.netlify.app/" target="_blank" rel="noopener" data-i18n="openApp">Apri ATM</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+      <div class="eyebrow reveal"><span class="status-dot"></span><span data-i18n="eyebrow">La nuova generazione è qui</span></div>
+      <h1 class="reveal delay-one"><span>Territory planning.</span><br><em>Refined.</em></h1>
+      <p class="hero-copy reveal delay-two" data-i18n="heroCopy">ATM Territory Maker Version 7 trasforma la creazione dei territori in un flusso chiaro, veloce e sorprendentemente semplice.</p>
+      <div class="hero-actions reveal delay-three">
+        <a class="button button-primary" href="https://atm-v7.netlify.app/" target="_blank" rel="noopener">
+          <span data-i18n="launchV7">Avvia Version 7</span><span aria-hidden="true">↗</span>
+        </a>
+        <a class="button button-ghost" href="#experience"><span data-i18n="discover">Scopri l’esperienza</span><span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="product-stage reveal delay-four" aria-label="Anteprima ATM Version 7">
+        <div class="stage-topline"><span>ATM / V7</span><span class="live"><i></i> LIVE</span></div>
+        <div class="stage-layout">
+          <aside class="stage-sidebar">
+            <div class="stage-logo">ATM</div>
+            <div class="nav-pill active"></div><div class="nav-pill"></div><div class="nav-pill short"></div>
+          </aside>
+          <div class="stage-main">
+            <div class="stage-heading"><div><small>WORKSPACE</small><strong data-i18n="previewTitle">I tuoi territori</strong></div><span>＋</span></div>
+            <div class="metric-row">
+              <div><small data-i18n="territories">Territori</small><b>12</b></div>
+              <div><small data-i18n="coverage">Copertura</small><b>98%</b></div>
+              <div class="accent-metric"><small data-i18n="ready">Pronti</small><b>11</b></div>
+            </div>
+            <div class="territory-list">
+              <div class="territory-card"><span class="pin lime"></span><b>Territorio 01</b><small>24 streets</small><i>✓</i></div>
+              <div class="territory-card"><span class="pin violet"></span><b>Territorio 02</b><small>18 streets</small><i>✓</i></div>
+              <div class="territory-card"><span class="pin coral"></span><b>Territorio 03</b><small>31 streets</small><i>→</i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement" id="experience">
+      <p class="section-label">01 — <span data-i18n="experienceLabel">L’esperienza</span></p>
+      <h2 data-i18n="statement">Meno complessità.<br>Più territorio.</h2>
+      <p data-i18n="statementCopy">Un ambiente focalizzato che mette gli strumenti importanti al posto giusto. Tutto ciò che serve per costruire, verificare e preparare il lavoro.</p>
+    </section>
+
+    <section class="features">
+      <article class="feature-card wide">
+        <div class="feature-number">01</div>
+        <div class="map-visual" aria-hidden="true"><span class="route route-a"></span><span class="route route-b"></span><span class="map-node node-a"></span><span class="map-node node-b"></span><span class="map-node node-c"></span></div>
+        <h3 data-i18n="featureCreate">Crea con precisione</h3>
+        <p data-i18n="featureCreateCopy">Disegna, organizza e rifinisci territori mantenendo una visione chiara del risultato.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-number">02</div>
+        <div class="mini-stack" aria-hidden="true"><span>ATM_territories.geojson</span><span>12 territories</span><i>✓</i></div>
+        <h3 data-i18n="featureTransfer">Trasferisci senza attrito</h3>
+        <p data-i18n="featureTransferCopy">ATM Bridge accompagna il file GeoJSON verso Territory Helper con un flusso guidato.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-number">03</div>
+        <div class="device-visual" aria-hidden="true"><div></div><span></span></div>
+        <h3 data-i18n="featureResponsive">Progettato per adattarsi</h3>
+        <p data-i18n="featureResponsiveCopy">Un’interfaccia reattiva e leggibile, dal desktop ai display touch.</p>
+      </article>
+    </section>
+
+    <section class="bridge" id="bridge">
+      <div class="bridge-copy">
+        <p class="section-label">02 — ATM BRIDGE</p>
+        <h2 data-i18n="bridgeTitle">Il passaggio finale,<br>reso naturale.</h2>
+        <p data-i18n="bridgeCopy">ATM Bridge collega ATM Territory Maker a Territory Helper. Riconosce il territorio pronto, prepara il trasferimento e ti mantiene sempre in controllo.</p>
+        <a class="text-link" href="https://atm-v7.netlify.app/website/" target="_blank" rel="noopener"><span data-i18n="discoverBridge">Scopri ATM Bridge</span> <span>↗</span></a>
+      </div>
+      <div class="bridge-preview">
+        <div class="bridge-window">
+          <div class="bridge-header"><span class="bridge-icon">ATM</span><div><b>ATM Bridge</b><small>Territory Helper connector</small></div><i></i></div>
+          <p>11 territories ready for Territory Helper.</p>
+          <div class="file-card"><span>GEO</span><div><b>ATM_v7_territories.geojson</b><small>11 territories</small></div><i>✓</i></div>
+          <div class="progress"><span></span></div>
+          <div class="continue" data-i18n="continueHelper">Continue to Territory Helper</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="version" id="version">
+      <div class="version-glow" aria-hidden="true"></div>
+      <div class="version-copy">
+        <p class="section-label">03 — VERSION 7</p>
+        <h2><span data-i18n="builtAround">Costruita intorno</span><br><em data-i18n="yourFlow">al tuo flusso.</em></h2>
+      </div>
+      <img src="assets/atm-v7-logo.png" alt="ATM Territory Version 7">
+      <div class="version-meta"><span>ATM TERRITORY MAKER</span><span>V7.0 / 2026</span></div>
+    </section>
+
+    <section class="cta">
+      <span class="status-dot"></span>
+      <p data-i18n="readyQuestion">Pronto a creare il prossimo territorio?</p>
+      <h2 data-i18n="startNow">Inizia con Version 7.</h2>
+      <a class="button button-primary" href="https://atm-v7.netlify.app/" target="_blank" rel="noopener"><span data-i18n="openATM">Apri ATM Territory Maker</span><span>↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top"><span class="brand-mark">ATM</span><span>Territory Maker</span></a>
+    <p>Version 7 · © 2026 ATM Territory Maker</p>
+    <div><a href="https://atm-v7.netlify.app/website/" target="_blank" rel="noopener">ATM Bridge</a><a href="mailto:atmsupportcentre@gmail.com" data-i18n="support">Supporto</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
