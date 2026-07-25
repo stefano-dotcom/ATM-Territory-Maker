@@ -10,6 +10,7 @@ Una nuova esperienza per creare, organizzare e trasferire territori.
 
 [![Visita la vetrina](https://img.shields.io/badge/VISITA_LA_VETRINA-99ff20?style=for-the-badge&logoColor=black)](https://stefano-dotcom.github.io/ATM-Territory-Maker/)
 [![Apri ATM Version 7](https://img.shields.io/badge/APRI_ATM_VERSION_7-f3f6ef?style=for-the-badge&logoColor=black)](https://atm-v7.netlify.app/)
+[![Installa ATM Bridge](https://img.shields.io/badge/FIREFOX-INSTALLA_ATM_BRIDGE-ff7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://addons.mozilla.org/it/firefox/addon/atm-bridge/)
 
 </div>
 
@@ -26,6 +27,7 @@ ATM Territory Maker Version 7 offre un ambiente chiaro e focalizzato per costrui
 - **Vetrina Version 7:** https://stefano-dotcom.github.io/ATM-Territory-Maker/
 - **ATM Territory Maker:** https://atm-v7.netlify.app/
 - **ATM Bridge:** https://atm-v7.netlify.app/website/
+- **Firefox Add-ons:** https://addons.mozilla.org/it/firefox/addon/atm-bridge/
 - **Supporto:** atmsupportcentre@gmail.com
 
 ## Diritti
