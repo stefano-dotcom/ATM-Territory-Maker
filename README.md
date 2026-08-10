@@ -1,35 +1,68 @@
 <div align="center">
 
-<img src="assets/atm-v7-logo.png" alt="ATM Territory Maker Version 7" width="520">
+<img src="assets/atm-manager-logo.png" alt="ATM Manager" width="112">
 
-# ATM Territory Maker — Version 7
+# ATM Manager
 
-### Territory planning. Refined.
+### Territory Operations · Version 1.0.8
 
-Una nuova esperienza per creare, organizzare e trasferire territori.
+Territori, persone, assegnazioni e sicurezza in un unico workspace.
 
-[![Visita la vetrina](https://img.shields.io/badge/VISITA_LA_VETRINA-99ff20?style=for-the-badge&logoColor=black)](https://stefano-dotcom.github.io/ATM-Territory-Maker/)
-[![Apri ATM Version 7](https://img.shields.io/badge/APRI_ATM_VERSION_7-f3f6ef?style=for-the-badge&logoColor=black)](https://atm-v7.netlify.app/)
-[![Installa ATM Bridge](https://img.shields.io/badge/FIREFOX-INSTALLA_ATM_BRIDGE-ff7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://addons.mozilla.org/it/firefox/addon/atm-bridge/)
+[![Apri la vetrina](https://img.shields.io/badge/APRI_LA_VETRINA-91ff16?style=for-the-badge&labelColor=101510)](https://stefano-dotcom.github.io/ATM-Territory-Maker/)
+[![Apri ATM Manager](https://img.shields.io/badge/APRI_ATM_MANAGER-f1f3ee?style=for-the-badge&labelColor=101510)](https://atm-manager.netlify.app/)
+[![Supporto](https://img.shields.io/badge/SUPPORTO-101510?style=for-the-badge)](mailto:atmsupportcentre@gmail.com)
 
 </div>
 
 ---
 
-## Version 7
+## Il progetto
 
-ATM Territory Maker Version 7 offre un ambiente chiaro e focalizzato per costruire, verificare e preparare territori. **ATM Bridge** completa il flusso accompagnando il file GeoJSON verso Territory Helper.
+ATM Manager è una piattaforma web per coordinare l’intero ciclo operativo dei territori. Riunisce mappe, persone, richieste, assegnazioni, notifiche e sicurezza in Space organizzativi separati.
 
-> Questo è il repository pubblico ufficiale di presentazione. Il codice sorgente dell'applicazione e dell'estensione non è incluso.
+La piattaforma nasce attorno a un modello a girasole: **ATM Manager è il fulcro**, mentre territori, persone, ATM v7 e sicurezza sono moduli connessi dello stesso ecosistema.
+
+## Cosa permette di fare
+
+- Creare, importare e organizzare territori e sezioni.
+- Consultare e modificare i confini direttamente sulla mappa.
+- Gestire richieste, assegnazioni, ritiri e periodi di riposo.
+- Controllare persone e autorizzazioni attraverso ruoli distinti.
+- Separare dati e attività in Space indipendenti.
+- Ricevere notifiche operative e messaggi email localizzati.
+- Usare MFA, passkey e registro attività per proteggere le operazioni.
+- Accedere da computer, tablet e telefono attraverso un’interfaccia responsive.
+
+## Ruoli
+
+| Ruolo | Responsabilità |
+| --- | --- |
+| Utente | Consulta i propri territori, invia richieste e restituisce il lavoro. |
+| Utente avanzato | Gestisce le operazioni territoriali senza amministrare gli account. |
+| Amministratore | Coordina persone, ruoli, territori, notifiche e attività del proprio Space. |
+| Proprietario dello Space | Governa il ciclo di vita dello Space e le operazioni più sensibili. |
+
+## Ecosistema ATM
+
+- **ATM Manager:** centro operativo per gestione, persone e assegnazioni.
+- **ATM Version 7:** modulo creativo per la generazione dei territori.
+- **ATM Bridge:** collegamento assistito verso Territory Helper.
+- **Centro sicurezza:** accesso, MFA, passkey e controllo delle sessioni.
 
 ## Collegamenti ufficiali
 
-- **Vetrina Version 7:** https://stefano-dotcom.github.io/ATM-Territory-Maker/
-- **ATM Territory Maker:** https://atm-v7.netlify.app/
-- **ATM Bridge:** https://atm-v7.netlify.app/website/
-- **Firefox Add-ons:** https://addons.mozilla.org/it/firefox/addon/atm-bridge/
-- **Supporto:** atmsupportcentre@gmail.com
+- [Vetrina GitHub Pages](https://stefano-dotcom.github.io/ATM-Territory-Maker/)
+- [ATM Manager](https://atm-manager.netlify.app/)
+- [ATM Version 7](https://atm-v7.netlify.app/)
+- [ATM Bridge per Firefox](https://addons.mozilla.org/it/firefox/addon/atm-bridge/)
+- [Supporto via email](mailto:atmsupportcentre@gmail.com)
+
+## Repository pubblico di presentazione
+
+Questo repository contiene esclusivamente la vetrina pubblica statica di ATM Manager. Il codice sorgente dell’applicazione, il backend, le migrazioni SQL, le configurazioni Supabase, le chiavi e i dati degli utenti **non sono inclusi**.
+
+Il codice HTML, CSS e JavaScript presente qui serve soltanto a visualizzare questa pagina promozionale e non contiene la logica privata della piattaforma.
 
 ## Diritti
 
-Copyright © 2026 ATM Territory Maker. Tutti i diritti riservati. Consulta [LICENSE.md](LICENSE.md).
+Copyright © 2026 ATM Manager. Tutti i diritti riservati. Consulta [LICENSE.md](LICENSE.md).
