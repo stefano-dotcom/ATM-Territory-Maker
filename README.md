@@ -33,6 +33,38 @@ La piattaforma nasce attorno a un modello a girasole: **ATM Manager è il fulcro
 - Usare MFA, passkey e registro attività per proteggere le operazioni.
 - Accedere da computer, tablet e telefono attraverso un’interfaccia responsive.
 
+## Come funziona ATM Manager
+
+1. **Creazione dello Space.** Il responsabile crea uno spazio organizzativo indipendente e protetto.
+2. **Ingresso del team.** Le persone entrano tramite invito o richiesta controllata e ricevono un ruolo preciso.
+3. **Creazione o importazione.** I territori possono essere importati da KML/JSON, organizzati in sezioni oppure generati con ATM v7.
+4. **Richiesta.** Un utente può localizzare un territorio disponibile e richiederlo; i dettagli operativi restano protetti fino all’approvazione.
+5. **Assegnazione.** Un amministratore o utente avanzato approva e assegna il territorio alla persona corretta.
+6. **Lavorazione.** L’assegnatario consulta mappa, perimetro, note e strade da completare.
+7. **Restituzione.** Il territorio viene restituito come lavorato o non lavorato, con eventuali note.
+8. **Riposo e cronologia.** Un territorio completato entra nel periodo di riposo previsto; notifiche, email e registro attività documentano il ciclo.
+
+## Le sezioni della piattaforma
+
+| Sezione | Funzione |
+| --- | --- |
+| Panoramica | Stato dello Space, indicatori, attività recenti e accesso rapido alle operazioni. |
+| ATM v7 | Modulo creativo integrato per generare nuovi perimetri territoriali. |
+| Territori | Mappa, elenco, sezioni, importazione, visualizzazione e modifica dei confini. |
+| I miei territori | Assegnazioni personali, richieste, dettagli operativi e restituzione. |
+| Assegnazioni | Richieste in attesa, territori attivi, riposo e storico. |
+| Persone | Approvazione degli account e gestione dei ruoli autorizzati. |
+| Registro attività | Cronologia delle operazioni importanti eseguite nello Space. |
+| Sicurezza | MFA, passkey, sessioni e verifiche rafforzate per azioni sensibili. |
+| Supporto | Contatto diretto con il centro assistenza ATM. |
+| Profilo e impostazioni | Dati personali, lingua individuale, sessione e gestione account. |
+
+## Space indipendenti
+
+Ogni organizzazione lavora nel proprio **Space**. Territori, membri, assegnazioni, notifiche ed email sono legati esclusivamente a quello spazio. Un gruppo non può leggere o modificare i dati di un altro gruppo.
+
+Il proprietario dello Space può invitare il proprio team e gestire il ciclo di vita dello spazio senza influenzare altre organizzazioni presenti sulla piattaforma.
+
 ## Ruoli
 
 | Ruolo | Responsabilità |
@@ -48,6 +80,12 @@ La piattaforma nasce attorno a un modello a girasole: **ATM Manager è il fulcro
 - **ATM Version 7:** modulo creativo per la generazione dei territori.
 - **ATM Bridge:** collegamento assistito verso Territory Helper.
 - **Centro sicurezza:** accesso, MFA, passkey e controllo delle sessioni.
+
+ATM v7 e ATM Manager svolgono due compiti diversi ma collegati: ATM v7 crea i territori; ATM Manager li organizza e ne governa l’intero ciclo operativo.
+
+## Dispositivi supportati
+
+ATM Manager è una web app responsive utilizzabile da computer, tablet e telefono. Le funzioni e la navigazione si adattano allo spazio disponibile, mentre le operazioni cartografiche più complesse risultano più comode su uno schermo ampio.
 
 ## Collegamenti ufficiali
 
