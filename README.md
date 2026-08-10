@@ -83,6 +83,37 @@ Il proprietario dello Space può invitare il proprio team e gestire il ciclo di 
 
 ATM v7 e ATM Manager svolgono due compiti diversi ma collegati: ATM v7 crea i territori; ATM Manager li organizza e ne governa l’intero ciclo operativo.
 
+### ATM Version 7
+
+ATM Version 7 è il modulo creativo dell’ecosistema. Parte da un’area geografica, genera una suddivisione territoriale e permette di controllare visivamente i perimetri prima dell’esportazione.
+
+Il suo flusso essenziale è:
+
+1. Selezione dell’area su cui lavorare.
+2. Generazione e suddivisione dei territori.
+3. Controllo del risultato sulla mappa.
+4. Esportazione in GeoJSON.
+5. Importazione o sincronizzazione nel flusso operativo di ATM Manager.
+
+[Apri ATM Version 7](https://atm-v7.netlify.app/)
+
+### ATM Bridge
+
+ATM Bridge è l’estensione Firefox che accompagna il passaggio del file generato verso Territory Helper. Rileva il GeoJSON, presenta una conferma chiara e consente di proseguire con l’importazione.
+
+- Non richiede di copiare manualmente il contenuto del file.
+- Mostra il file rilevato prima di continuare.
+- Mantiene il controllo nelle mani dell’utente.
+- È distribuita pubblicamente tramite Firefox Add-ons.
+
+[Installa ATM Bridge](https://addons.mozilla.org/it/firefox/addon/atm-bridge/)
+
+### Il flusso completo
+
+**ATM Version 7 genera → ATM Bridge trasferisce → ATM Manager organizza e gestisce.**
+
+I tre prodotti hanno responsabilità diverse e complementari: creazione cartografica, trasferimento assistito e gestione operativa.
+
 ## Dispositivi supportati
 
 ATM Manager è una web app responsive utilizzabile da computer, tablet e telefono. Le funzioni e la navigazione si adattano allo spazio disponibile, mentre le operazioni cartografiche più complesse risultano più comode su uno schermo ampio.

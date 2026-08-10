@@ -4,6 +4,26 @@ const copy={
 };
 
 Object.assign(copy.it, {
+  navProducts: "Prodotti",
+  suiteEyebrow: "L’ECOSISTEMA COMPLETO",
+  suiteTitle: "Dal disegno al trasferimento.<br>Tre prodotti, un solo flusso.",
+  suiteText: "ATM Manager coordina il lavoro, ATM Version 7 crea i territori e ATM Bridge accompagna il trasferimento verso Territory Helper.",
+  creativeModule: "MODULO CREATIVO",
+  v7Description: "Trasforma un’area geografica in territori organizzati. Permette di generare perimetri, controllare il risultato ed esportare i dati pronti per il flusso operativo.",
+  v7PointOne: "Generazione e suddivisione dei territori",
+  v7PointTwo: "Anteprima cartografica e controllo dei perimetri",
+  v7PointThree: "Esportazione GeoJSON per l’utilizzo successivo",
+  openV7: "Apri ATM Version 7",
+  browserExtension: "ESTENSIONE FIREFOX",
+  readyTransfer: "Pronto per il trasferimento",
+  bridgeDescription: "È il collegamento assistito tra ATM e Territory Helper. Rileva il file generato, mostra una conferma e guida l’utente verso l’importazione senza server intermedi.",
+  bridgePointOne: "Rilevamento del GeoJSON generato",
+  bridgePointTwo: "Notifica e conferma prima del trasferimento",
+  bridgePointThree: "Disponibile pubblicamente su Firefox Add-ons",
+  installBridge: "Installa ATM Bridge",
+  flowGenerate: "Genera",
+  flowTransfer: "Trasferisce",
+  flowManage: "Organizza e gestisce",
   navHow: "Come funziona",
   tourEyebrow: "DENTRO ATM MANAGER",
   tourTitle: "Tutto il lavoro.<br>Un solo percorso.",
@@ -47,6 +67,26 @@ Object.assign(copy.it, {
 });
 
 Object.assign(copy.en, {
+  navProducts: "Products",
+  suiteEyebrow: "THE COMPLETE ECOSYSTEM",
+  suiteTitle: "From drawing to transfer.<br>Three products, one workflow.",
+  suiteText: "ATM Manager coordinates operations, ATM Version 7 creates territories and ATM Bridge guides their transfer to Territory Helper.",
+  creativeModule: "CREATIVE MODULE",
+  v7Description: "Turns a geographic area into organized territories. Generate boundaries, review the result and export data ready for the operational workflow.",
+  v7PointOne: "Territory generation and subdivision",
+  v7PointTwo: "Map preview and boundary review",
+  v7PointThree: "GeoJSON export for the next step",
+  openV7: "Open ATM Version 7",
+  browserExtension: "FIREFOX EXTENSION",
+  readyTransfer: "Ready to transfer",
+  bridgeDescription: "The assisted connection between ATM and Territory Helper. It detects the generated file, asks for confirmation and guides the user to import it without intermediate servers.",
+  bridgePointOne: "Detection of the generated GeoJSON",
+  bridgePointTwo: "Notification and confirmation before transfer",
+  bridgePointThree: "Publicly available on Firefox Add-ons",
+  installBridge: "Install ATM Bridge",
+  flowGenerate: "Generates",
+  flowTransfer: "Transfers",
+  flowManage: "Organizes and manages",
   navHow: "How it works",
   tourEyebrow: "INSIDE ATM MANAGER",
   tourTitle: "The entire operation.<br>One clear journey.",
@@ -94,4 +134,4 @@ const languageButton=document.getElementById("languageButton");
 function setLanguage(){document.documentElement.lang=language;languageButton.textContent=language.toUpperCase();document.querySelectorAll("[data-i18n]").forEach(node=>{const value=copy[language][node.dataset.i18n];if(value)node.innerHTML=value});localStorage.setItem("atm-showcase-language",language)}
 languageButton.addEventListener("click",()=>{language=language==="it"?"en":"it";setLanguage()});setLanguage();
 const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("in-view");observer.unobserve(entry.target)}}),{threshold:.12});
-document.querySelectorAll(".feature,.role-grid article,.workflow li,.security-panel").forEach(node=>observer.observe(node));
+document.querySelectorAll(".feature,.role-grid article,.workflow li,.security-panel,.suite-card,.suite-flow").forEach(node=>observer.observe(node));

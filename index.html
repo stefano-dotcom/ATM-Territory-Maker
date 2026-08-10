@@ -16,6 +16,7 @@
   <title>ATM Manager — Territory Operations</title>
   <link rel="icon" href="assets/atm-manager-logo.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="suite.css">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -39,6 +40,7 @@
     </a>
     <nav aria-label="Navigazione principale">
       <a href="#ecosystem" data-i18n="navEcosystem">Ecosistema</a>
+      <a href="#suite" data-i18n="navProducts">Prodotti</a>
       <a href="#features" data-i18n="navFeatures">Funzioni</a>
       <a href="#how-it-works" data-i18n="navHow">Come funziona</a>
       <a href="#roles" data-i18n="navRoles">Ruoli</a>
@@ -92,6 +94,60 @@
         <article class="petal petal-bottom"><b data-i18n="security">Sicurezza</b><small>MFA · Passkey</small></article>
         <article class="petal petal-left"><b data-i18n="people">Persone</b><small data-i18n="petalRoles">Accessi e ruoli</small></article>
         <div class="core"><img src="assets/atm-manager-logo.png" alt=""><span><b>ATM<br>Manager</b><small data-i18n="controlCenter">Centro operativo</small></span></div>
+      </div>
+    </section>
+
+    <section class="suite-products section" id="suite">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="suiteEyebrow">L’ECOSISTEMA COMPLETO</p>
+        <h2 data-i18n="suiteTitle">Dal disegno al trasferimento.<br>Tre prodotti, un solo flusso.</h2>
+        <p data-i18n="suiteText">ATM Manager coordina il lavoro, ATM Version 7 crea i territori e ATM Bridge accompagna il trasferimento verso Territory Helper.</p>
+      </div>
+      <div class="suite-grid">
+        <article class="suite-card suite-v7">
+          <div class="suite-card-top">
+            <img src="assets/atm-v7-logo.png" alt="ATM Version 7">
+            <span data-i18n="creativeModule">MODULO CREATIVO</span>
+          </div>
+          <div class="suite-visual v7-visual" aria-hidden="true">
+            <span></span><span></span><span></span><i>ATM v7</i>
+          </div>
+          <h3>ATM Version 7</h3>
+          <p data-i18n="v7Description">Trasforma un’area geografica in territori organizzati. Permette di generare perimetri, controllare il risultato ed esportare i dati pronti per il flusso operativo.</p>
+          <ul>
+            <li data-i18n="v7PointOne">Generazione e suddivisione dei territori</li>
+            <li data-i18n="v7PointTwo">Anteprima cartografica e controllo dei perimetri</li>
+            <li data-i18n="v7PointThree">Esportazione GeoJSON per l’utilizzo successivo</li>
+          </ul>
+          <a class="suite-link" href="https://atm-v7.netlify.app/" target="_blank" rel="noopener"><span data-i18n="openV7">Apri ATM Version 7</span><span>↗</span></a>
+        </article>
+
+        <article class="suite-card suite-bridge">
+          <div class="suite-card-top">
+            <img src="assets/atm-bridge-logo.png" alt="ATM Bridge">
+            <span data-i18n="browserExtension">ESTENSIONE FIREFOX</span>
+          </div>
+          <div class="suite-visual bridge-visual" aria-hidden="true">
+            <div><b>ATM Bridge</b><small>Territory Helper connector</small></div>
+            <div class="bridge-file"><i>GEO</i><span><b>ATM_Territories.geojson</b><small data-i18n="readyTransfer">Pronto per il trasferimento</small></span><strong>✓</strong></div>
+            <span class="bridge-progress"></span>
+          </div>
+          <h3>ATM Bridge</h3>
+          <p data-i18n="bridgeDescription">È il collegamento assistito tra ATM e Territory Helper. Rileva il file generato, mostra una conferma e guida l’utente verso l’importazione senza server intermedi.</p>
+          <ul>
+            <li data-i18n="bridgePointOne">Rilevamento del GeoJSON generato</li>
+            <li data-i18n="bridgePointTwo">Notifica e conferma prima del trasferimento</li>
+            <li data-i18n="bridgePointThree">Disponibile pubblicamente su Firefox Add-ons</li>
+          </ul>
+          <a class="suite-link" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener"><span data-i18n="installBridge">Installa ATM Bridge</span><span>↗</span></a>
+        </article>
+      </div>
+      <div class="suite-flow" aria-label="Flusso dei prodotti ATM">
+        <span><b>01</b><i>ATM v7</i><small data-i18n="flowGenerate">Genera</small></span>
+        <strong>→</strong>
+        <span><b>02</b><i>ATM Bridge</i><small data-i18n="flowTransfer">Trasferisce</small></span>
+        <strong>→</strong>
+        <span><b>03</b><i>ATM Manager</i><small data-i18n="flowManage">Organizza e gestisce</small></span>
       </div>
     </section>
 
