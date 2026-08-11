@@ -1,26 +1,28 @@
 <div align="center">
 
-<img src="assets/atm-manager-logo.png" alt="ATM Manager" width="112">
+<img src="assets/atm-v7-logo.png" alt="ATM Territory Ecosystem" width="112">
 
-# ATM Manager
+# ATM Territory Ecosystem
 
-### Territory Operations · Version 1.0.8
+### Create · Connect · Manage
 
-Territori, persone, assegnazioni e sicurezza in un unico workspace.
+**ATM Version 7 crea → ATM Bridge trasferisce → ATM Manager organizza e gestisce.**
 
 [![Apri la vetrina](https://img.shields.io/badge/APRI_LA_VETRINA-91ff16?style=for-the-badge&labelColor=101510)](https://stefano-dotcom.github.io/ATM-Territory-Maker/)
 [![Apri ATM Manager](https://img.shields.io/badge/APRI_ATM_MANAGER-f1f3ee?style=for-the-badge&labelColor=101510)](https://atm-manager.netlify.app/)
+[![Apri ATM v7](https://img.shields.io/badge/APRI_ATM_V7-f1f3ee?style=for-the-badge&labelColor=101510)](https://atm-v7.netlify.app/)
+[![Installa ATM Bridge](https://img.shields.io/badge/INSTALLA_ATM_BRIDGE-91ff16?style=for-the-badge&labelColor=101510)](https://addons.mozilla.org/it/firefox/addon/atm-bridge/)
 [![Supporto](https://img.shields.io/badge/SUPPORTO-101510?style=for-the-badge)](mailto:atmsupportcentre@gmail.com)
 
 </div>
 
 ---
 
-## Il progetto
+## L’ecosistema
 
-ATM Manager è una piattaforma web per coordinare l’intero ciclo operativo dei territori. Riunisce mappe, persone, richieste, assegnazioni, notifiche e sicurezza in Space organizzativi separati.
+ATM Territory Ecosystem riunisce tre prodotti complementari: ATM Version 7 per creare i territori, ATM Bridge per accompagnarne il trasferimento e ATM Manager per coordinare persone, richieste, assegnazioni, notifiche e sicurezza.
 
-La piattaforma nasce attorno a un modello a girasole: **ATM Manager è il fulcro**, mentre territori, persone, ATM v7 e sicurezza sono moduli connessi dello stesso ecosistema.
+Il sistema nasce attorno a un modello a girasole: **ATM Manager è il fulcro operativo**, mentre creazione, trasferimento, territori, persone e sicurezza sono moduli connessi dello stesso flusso.
 
 ## Cosa permette di fare
 
@@ -123,15 +125,17 @@ ATM Manager è una web app responsive utilizzabile da computer, tablet e telefon
 - [Vetrina GitHub Pages](https://stefano-dotcom.github.io/ATM-Territory-Maker/)
 - [ATM Manager](https://atm-manager.netlify.app/)
 - [ATM Version 7](https://atm-v7.netlify.app/)
+- [Pagina di ATM Bridge](https://atm-v7.netlify.app/website/)
 - [ATM Bridge per Firefox](https://addons.mozilla.org/it/firefox/addon/atm-bridge/)
+- [Pacchetto ATM Bridge per Chrome](https://raw.githubusercontent.com/stefano-dotcom/ATM-Territory-Maker/main/downloads/atm-bridge-v0.7.3.zip)
 - [Supporto via email](mailto:atmsupportcentre@gmail.com)
 
 ## Repository pubblico di presentazione
 
-Questo repository contiene esclusivamente la vetrina pubblica statica di ATM Manager. Il codice sorgente dell’applicazione, il backend, le migrazioni SQL, le configurazioni Supabase, le chiavi e i dati degli utenti **non sono inclusi**.
+Questo repository contiene esclusivamente la vetrina pubblica statica dell’ecosistema ATM. Il codice sorgente privato di ATM Manager, ATM Version 7 e ATM Bridge, il backend, le migrazioni SQL, le configurazioni Supabase, le chiavi e i dati degli utenti **non sono inclusi**.
 
 Il codice HTML, CSS e JavaScript presente qui serve soltanto a visualizzare questa pagina promozionale e non contiene la logica privata della piattaforma.
 
 ## Diritti
 
-Copyright © 2026 ATM Manager. Tutti i diritti riservati. Consulta [LICENSE.md](LICENSE.md).
+Copyright © 2026 ATM Territory Ecosystem. Tutti i diritti riservati. Consulta [LICENSE.md](LICENSE.md).

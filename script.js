@@ -1,64 +1,163 @@
 const copy={
-  it:{
-    navProducts:"Prodotti",navEcosystem:"Ecosistema",navManager:"ATM Manager",navSecurity:"Sicurezza",installShort:"Installa Bridge",
-    heroEyebrow:"ATM TERRITORY ECOSYSTEM",heroTitle:"Tre strumenti.<br><em>Un solo ecosistema.</em>",heroText:"Crea territori con ATM Version 7, coordina persone e assegnazioni con ATM Manager e usa ATM Bridge per collegare il flusso a Territory Helper.",
-    openManager:"Apri ATM Manager",openV7:"Apri ATM Version 7",installBridge:"Installa ATM Bridge",trustOne:"3 prodotti complementari",trustTwo:"Web app responsive",trustThree:"Estensione Firefox",videoCaption:"Il centro operativo dell’ecosistema ATM",
-    metricProducts:"Prodotti collegati",metricFlow:"Ecosistema coerente",metricWeb:"Accesso web",metricBridge:"Bridge installabile",
-    productsEyebrow:"I PRODOTTI ATM",productsTitle:"Ogni strumento ha un ruolo.<br>Insieme lavorano meglio.",productsText:"La vetrina ATM riunisce il centro operativo, il creatore di territori e il collegamento con Territory Helper in un’unica esperienza chiara.",
-    managerBadge:"CENTRO OPERATIVO",managerDescription:"Il cuore operativo per organizzare territori, persone, richieste, assegnazioni, restituzioni, ruoli e sicurezza dentro Space separati.",managerPointOne:"Gestione completa di territori e assegnazioni",managerPointTwo:"Account, ruoli, Space, notifiche e cronologia",managerPointThree:"Interfaccia responsive con controlli di sicurezza avanzati",
-    v7Badge:"CREAZIONE TERRITORI",v7Description:"Il modulo creativo dedicato alla generazione e suddivisione delle aree geografiche in territori pronti per il flusso operativo.",v7PointOne:"Generazione e suddivisione dei territori",v7PointTwo:"Anteprima cartografica e controllo dei perimetri",v7PointThree:"Esportazione GeoJSON pronta per l’utilizzo successivo",
-    bridgeBadge:"ESTENSIONE FIREFOX",bridgeDescription:"L’estensione che accompagna il trasferimento dei file generati da ATM verso Territory Helper, con conferma prima dell’azione e senza server intermedi.",bridgePointOne:"Rilevamento del GeoJSON generato",bridgePointTwo:"Conferma guidata prima del trasferimento",bridgePointThree:"Installazione pubblica tramite Firefox Add-ons",
-    ecosystemEyebrow:"COME SI COMPLETANO",ecosystemTitle:"Tre specialisti.<br>Una sola esperienza.",ecosystemText:"ATM Version 7 pensa alla creazione, ATM Manager governa le operazioni quotidiane e ATM Bridge rende più semplice il collegamento con Territory Helper.",flowLabelOne:"CREA",flowTextOne:"Disegna, genera e controlla i territori sulla mappa.",flowLabelTwo:"GESTISCI",flowTextTwo:"Organizza persone, territori, richieste, ruoli e attività.",flowLabelThree:"COLLEGA",flowTextThree:"Accompagna il trasferimento verso Territory Helper.",openProduct:"Apri prodotto ↗",installProduct:"Installa estensione ↗",
-    managerDeepEyebrow:"DENTRO ATM MANAGER",managerDeepTitle:"Il centro di controllo del lavoro reale.",managerDeepText:"ATM Manager riunisce il lavoro quotidiano in un’unica interfaccia: dalla richiesta di un territorio alla restituzione, fino alla gestione di utenti e privilegi.",featureTerritories:"Territori vivi",featureTerritoriesText:"Consulta la mappa, individua le aree, controlla i perimetri e mantieni le informazioni operative nello stesso posto.",featureAssignments:"Assegnazioni complete",featureAssignmentsText:"Richieste, approvazioni, assegnazioni, ritiri e restituzioni rimangono leggibili e tracciabili.",featureRoles:"Ruoli chiari",featureRolesText:"Ogni persona vede gli strumenti coerenti con il proprio livello di responsabilità.",
-    securityTitle:"Sicurezza incorporata nel flusso.",securityText:"Approvazione degli account, separazione degli Space, controlli per ruolo, MFA, passkey e registro attività aiutano a proteggere le operazioni quotidiane.",contactSupport:"Contatta il supporto",secureSpaces:"Separazione degli Space",secureMfa:"MFA e passkey",secureAudit:"Registro attività",secureApproval:"Approvazione controllata",
-    ctaEyebrow:"SCEGLI IL TUO STRUMENTO",ctaTitle:"Crea. Gestisci. Collega.<br><em>Tutto dentro ATM.</em>",ctaText:"Accedi subito al prodotto che ti serve oppure installa ATM Bridge dal catalogo ufficiale Firefox Add-ons.",support:"Supporto"
-  },
-  en:{
-    navProducts:"Products",navEcosystem:"Ecosystem",navManager:"ATM Manager",navSecurity:"Security",installShort:"Install Bridge",
-    heroEyebrow:"ATM TERRITORY ECOSYSTEM",heroTitle:"Three tools.<br><em>One ecosystem.</em>",heroText:"Create territories with ATM Version 7, coordinate people and assignments with ATM Manager, and use ATM Bridge to connect the workflow with Territory Helper.",
-    openManager:"Open ATM Manager",openV7:"Open ATM Version 7",installBridge:"Install ATM Bridge",trustOne:"3 complementary products",trustTwo:"Responsive web apps",trustThree:"Firefox extension",videoCaption:"The operating center of the ATM ecosystem",
-    metricProducts:"Connected products",metricFlow:"Coherent ecosystem",metricWeb:"Web access",metricBridge:"Installable Bridge",
-    productsEyebrow:"ATM PRODUCTS",productsTitle:"Every tool has a role.<br>Together they work better.",productsText:"The ATM showcase brings together the operating center, territory creator and Territory Helper connection in one clear experience.",
-    managerBadge:"OPERATING CENTER",managerDescription:"The operational heart for organizing territories, people, requests, assignments, returns, roles and security inside isolated Spaces.",managerPointOne:"Complete territory and assignment management",managerPointTwo:"Accounts, roles, Spaces, notifications and history",managerPointThree:"Responsive interface with advanced security controls",
-    v7Badge:"TERRITORY CREATION",v7Description:"The creative module dedicated to generating and dividing geographic areas into territories ready for the operational workflow.",v7PointOne:"Territory generation and subdivision",v7PointTwo:"Map preview and boundary review",v7PointThree:"GeoJSON export ready for the next step",
-    bridgeBadge:"FIREFOX EXTENSION",bridgeDescription:"The extension that assists the transfer of files generated by ATM toward Territory Helper, with confirmation before the action and no intermediate servers.",bridgePointOne:"Detection of generated GeoJSON",bridgePointTwo:"Guided confirmation before transfer",bridgePointThree:"Public installation through Firefox Add-ons",
-    ecosystemEyebrow:"HOW THEY WORK TOGETHER",ecosystemTitle:"Three specialists.<br>One experience.",ecosystemText:"ATM Version 7 handles creation, ATM Manager governs daily operations, and ATM Bridge simplifies the connection with Territory Helper.",flowLabelOne:"CREATE",flowTextOne:"Draw, generate and review territories on the map.",flowLabelTwo:"MANAGE",flowTextTwo:"Organize people, territories, requests, roles and activity.",flowLabelThree:"CONNECT",flowTextThree:"Assist the transfer toward Territory Helper.",openProduct:"Open product ↗",installProduct:"Install extension ↗",
-    managerDeepEyebrow:"INSIDE ATM MANAGER",managerDeepTitle:"The control center for real work.",managerDeepText:"ATM Manager brings daily work into one interface: from requesting a territory to returning it, through to user and privilege management.",featureTerritories:"Living territories",featureTerritoriesText:"Browse the map, locate areas, review boundaries and keep operational information in one place.",featureAssignments:"Complete assignments",featureAssignmentsText:"Requests, approvals, assignments, recalls and returns stay clear and traceable.",featureRoles:"Clear roles",featureRolesText:"Each person sees the tools that match their level of responsibility.",
-    securityTitle:"Security built into the workflow.",securityText:"Account approval, Space separation, role controls, MFA, passkeys and activity logs help protect everyday operations.",contactSupport:"Contact support",secureSpaces:"Space separation",secureMfa:"MFA and passkeys",secureAudit:"Activity log",secureApproval:"Controlled approval",
-    ctaEyebrow:"CHOOSE YOUR TOOL",ctaTitle:"Create. Manage. Connect.<br><em>All inside ATM.</em>",ctaText:"Open the product you need or install ATM Bridge from the official Firefox Add-ons catalog.",support:"Support"
-  }
+  it:{navEcosystem:"Ecosistema",navFeatures:"Funzioni",navRoles:"Ruoli",navSecurity:"Sicurezza",openManager:"Apri Manager",heroTitle:"Ogni territorio.<br><em>Una sola regia.</em>",heroText:"Un workspace professionale per organizzare territori, persone, assegnazioni e sicurezza senza perdere il controllo.",enterWorkspace:"Entra nel workspace",discover:"Scopri la piattaforma",webApp:"Web app responsive",roleAccess:"Accesso per ruoli",privateSpaces:"Space separati",metricSpaces:"Space indipendenti",metricRoles:"Livelli di accesso",metricRealtime:"Attività sincronizzate",metricSecurity:"Protezione avanzata",ecosystemEyebrow:"IL MODELLO A GIRASOLE",ecosystemTitle:"Un centro operativo.<br>Tutto intorno, connesso.",ecosystemText:"ATM Manager è il fulcro. Ogni modulo è un petalo specializzato che condivide lo stesso flusso di lavoro.",petalCreate:"Crea territori",territories:"Territori",petalView:"Visualizza e modifica",security:"Sicurezza",people:"Persone",petalRoles:"Accessi e ruoli",controlCenter:"Centro operativo",featuresTitle:"Progettato per il lavoro reale.",featureTerritories:"Territori vivi, non file statici",featureTerritoriesText:"Importa KML o JSON, crea sezioni, modifica confini e consulta ogni area sulla mappa.",assigned:"Territorio assegnato",featureAssignments:"Assegnazioni complete",featureAssignmentsText:"Richieste, approvazioni, ritiri, riposo automatico e cronologia in un solo registro.",featureRoles:"Il ruolo giusto, al momento giusto",featureRolesText:"Ogni persona vede soltanto gli strumenti e i dati necessari al proprio incarico.",featureInternational:"Nato per lavorare oltre i confini",featureInternationalText:"Preferenze linguistiche personali, email localizzate e Space isolati permettono a gruppi diversi di operare senza confusione.",workflowEyebrow:"DAL PRIMO ACCESSO ALLA CONSEGNA",workflowTitle:"Un flusso leggibile, dall’inizio alla fine.",flowCreate:"Crea il tuo Space",flowCreateText:"Il primo responsabile configura uno spazio organizzativo isolato.",flowInvite:"Invita il team",flowInviteText:"Utenti e amministratori entrano attraverso un invito controllato.",flowOrganize:"Organizza e assegna",flowOrganizeText:"Territori, sezioni e richieste rimangono sincronizzati.",flowComplete:"Completa e monitora",flowCompleteText:"Restituzioni, periodi di riposo e attività restano tracciati.",rolesEyebrow:"CONTROLLO ACCESSI",rolesTitle:"Responsabilità chiare.",user:"Utente",userText:"Consulta i propri territori, invia richieste e restituisce il lavoro.",advanced:"Utente avanzato",advancedText:"Gestisce operazioni territoriali senza amministrare gli account.",admin:"Amministratore",adminText:"Coordina persone, ruoli, territori, notifiche e attività del proprio Space.",owner:"Proprietario dello Space",ownerText:"Governa il ciclo di vita dello spazio e le operazioni più sensibili.",securityTitle:"Sicurezza incorporata nel flusso.",securityText:"Approvazione degli account, isolamento per Space, controlli per ruolo, MFA, passkey e registro attività proteggono le operazioni quotidiane.",contactSupport:"Contatta il supporto",secureSpaces:"Separazione degli Space",secureMfa:"MFA e passkey",secureAudit:"Audit delle attività",secureApproval:"Approvazione controllata",ready:"WORKSPACE PRONTO",ctaTitle:"Il territorio è complesso.<br><em>Gestirlo non deve esserlo.</em>",openATM:"Apri ATM Manager",support:"Supporto"},
+  en:{navEcosystem:"Ecosystem",navFeatures:"Features",navRoles:"Roles",navSecurity:"Security",openManager:"Open Manager",heroTitle:"Every territory.<br><em>One command center.</em>",heroText:"A professional workspace for organizing territories, people, assignments and security without losing control.",enterWorkspace:"Enter the workspace",discover:"Discover the platform",webApp:"Responsive web app",roleAccess:"Role-based access",privateSpaces:"Isolated Spaces",metricSpaces:"Independent Spaces",metricRoles:"Access levels",metricRealtime:"Synchronized activity",metricSecurity:"Advanced protection",ecosystemEyebrow:"THE SUNFLOWER MODEL",ecosystemTitle:"One command center.<br>Everything connected around it.",ecosystemText:"ATM Manager is the core. Every module is a specialized petal sharing the same workflow.",petalCreate:"Create territories",territories:"Territories",petalView:"View and edit",security:"Security",people:"People",petalRoles:"Access and roles",controlCenter:"Command center",featuresTitle:"Built for real operations.",featureTerritories:"Living territories, not static files",featureTerritoriesText:"Import KML or JSON, create sections, edit boundaries and inspect every area on the map.",assigned:"Territory assigned",featureAssignments:"Complete assignment lifecycle",featureAssignmentsText:"Requests, approvals, recalls, automatic rest periods and history in one register.",featureRoles:"The right role at the right time",featureRolesText:"Every person sees only the tools and data required for their responsibility.",featureInternational:"Designed to work across borders",featureInternationalText:"Personal language preferences, localized emails and isolated Spaces let different groups operate without confusion.",workflowEyebrow:"FROM FIRST ACCESS TO COMPLETION",workflowTitle:"A clear workflow, from start to finish.",flowCreate:"Create your Space",flowCreateText:"The first manager configures an isolated organizational space.",flowInvite:"Invite the team",flowInviteText:"Users and administrators join through a controlled invitation.",flowOrganize:"Organize and assign",flowOrganizeText:"Territories, sections and requests remain synchronized.",flowComplete:"Complete and monitor",flowCompleteText:"Returns, rest periods and activity stay traceable.",rolesEyebrow:"ACCESS CONTROL",rolesTitle:"Clear responsibilities.",user:"User",userText:"Views assigned territories, submits requests and returns completed work.",advanced:"Advanced user",advancedText:"Manages territory operations without administering accounts.",admin:"Administrator",adminText:"Coordinates people, roles, territories, notifications and activity inside a Space.",owner:"Space owner",ownerText:"Governs the Space lifecycle and its most sensitive operations.",securityTitle:"Security built into the workflow.",securityText:"Account approval, Space isolation, role controls, MFA, passkeys and activity logs protect daily operations.",contactSupport:"Contact support",secureSpaces:"Space isolation",secureMfa:"MFA and passkeys",secureAudit:"Activity auditing",secureApproval:"Controlled approval",ready:"WORKSPACE READY",ctaTitle:"Territory work is complex.<br><em>Managing it should not be.</em>",openATM:"Open ATM Manager",support:"Support"}
 };
+
+Object.assign(copy.it, {
+  navProducts: "Prodotti",
+  suiteEyebrow: "L’ECOSISTEMA COMPLETO",
+  suiteTitle: "Dal disegno al trasferimento.<br>Tre prodotti, un solo flusso.",
+  suiteText: "ATM Manager coordina il lavoro, ATM Version 7 crea i territori e ATM Bridge accompagna il trasferimento verso Territory Helper.",
+  creativeModule: "MODULO CREATIVO",
+  v7Description: "Trasforma un’area geografica in territori organizzati. Permette di generare perimetri, controllare il risultato ed esportare i dati pronti per il flusso operativo.",
+  v7PointOne: "Generazione e suddivisione dei territori",
+  v7PointTwo: "Anteprima cartografica e controllo dei perimetri",
+  v7PointThree: "Esportazione GeoJSON per l’utilizzo successivo",
+  openV7: "Apri ATM Version 7",
+  browserExtension: "ESTENSIONE FIREFOX",
+  readyTransfer: "Pronto per il trasferimento",
+  bridgeDescription: "È il collegamento assistito tra ATM e Territory Helper. Rileva il file generato, mostra una conferma e guida l’utente verso l’importazione senza server intermedi.",
+  bridgePointOne: "Rilevamento del GeoJSON generato",
+  bridgePointTwo: "Notifica e conferma prima del trasferimento",
+  bridgePointThree: "Disponibile pubblicamente su Firefox Add-ons",
+  installBridge: "Installa ATM Bridge",
+  flowGenerate: "Genera",
+  flowTransfer: "Trasferisce",
+  flowManage: "Organizza e gestisce",
+  navHow: "Come funziona",
+  tourEyebrow: "DENTRO ATM MANAGER",
+  tourTitle: "Tutto il lavoro.<br>Un solo percorso.",
+  tourText: "Dalla creazione dello Space alla restituzione di un territorio: ogni schermata ha uno scopo preciso e ogni operazione resta collegata.",
+  tourDashboard: "Panoramica",
+  tourDashboardText: "Mostra lo stato reale dello Space: territori totali, disponibili, assegnati, richieste e attività recenti.",
+  tourMap: "Territori e mappa",
+  tourMapText: "Cerca un territorio, localizzalo sulla mappa, consulta il perimetro e apri la sua scheda completa.",
+  tourV7Text: "Genera nuovi territori nel modulo creativo e preparali per il flusso operativo di ATM Manager.",
+  tourAssignments: "Richieste e assegnazioni",
+  tourAssignmentsText: "Gli utenti richiedono un’area; amministratori e utenti avanzati la valutano, assegnano o ritirano.",
+  tourWork: "Lavorazione e restituzione",
+  tourWorkText: "Le strade da completare diventano visibili all’assegnatario. Alla restituzione si indica se il territorio è stato lavorato.",
+  tourRest: "Riposo automatico",
+  tourRestText: "Un territorio completato riposa per un mese; un amministratore può intervenire quando necessario.",
+  tourPeople: "Persone e ruoli",
+  tourPeopleText: "Approva nuovi account e assegna responsabilità senza esporre dati appartenenti ad altri Space.",
+  tourUpdates: "Notifiche e attività",
+  tourUpdatesText: "Eventi importanti, email localizzate e registro cronologico mantengono il team aggiornato.",
+  spaceProtected: "Spazio isolato e protetto",
+  createsInvites: "Crea e invita",
+  coordinates: "Coordina il lavoro",
+  worksAssigned: "Lavora sui territori assegnati",
+  spacesEyebrow: "COME FUNZIONANO GLI SPACE",
+  spacesTitle: "Ogni organizzazione resta nel proprio spazio.",
+  spacesText: "Il responsabile crea uno Space e invita il proprio team. Persone, territori, notifiche ed email rimangono confinati in quello Space: le organizzazioni esterne non possono consultarsi a vicenda.",
+  spacesOne: "Un’identità personale per ogni membro",
+  spacesTwo: "Approvazione controllata dei nuovi account",
+  spacesThree: "Lingua e comunicazioni scelte individualmente",
+  faqTitle: "Le risposte essenziali.",
+  faqOne: "ATM Manager sostituisce ATM v7?",
+  faqOneText: "No. ATM v7 è il modulo creativo dedicato alla generazione; ATM Manager governa persone, territori e operazioni.",
+  faqTwo: "Gli utenti vedono subito le strade da lavorare?",
+  faqTwoText: "No. Prima dell’approvazione possono localizzare il territorio, ma i dettagli operativi diventano disponibili soltanto dopo l’assegnazione.",
+  faqThree: "Uno Space può vedere i dati di un altro?",
+  faqThreeText: "No. Gli Space sono separati e le autorizzazioni limitano letture e operazioni al contesto dell’organizzazione.",
+  faqFour: "Funziona su tablet e telefono?",
+  faqFourText: "Sì. L’interfaccia è responsive e adatta le funzioni principali alle dimensioni del dispositivo.",
+  faqFive: "Come si richiede assistenza?",
+  faqFiveText: "È disponibile un centro supporto dentro ATM Manager oppure puoi scrivere all’indirizzo ufficiale indicato in fondo alla pagina."
+});
+
+Object.assign(copy.en, {
+  navProducts: "Products",
+  suiteEyebrow: "THE COMPLETE ECOSYSTEM",
+  suiteTitle: "From drawing to transfer.<br>Three products, one workflow.",
+  suiteText: "ATM Manager coordinates operations, ATM Version 7 creates territories and ATM Bridge guides their transfer to Territory Helper.",
+  creativeModule: "CREATIVE MODULE",
+  v7Description: "Turns a geographic area into organized territories. Generate boundaries, review the result and export data ready for the operational workflow.",
+  v7PointOne: "Territory generation and subdivision",
+  v7PointTwo: "Map preview and boundary review",
+  v7PointThree: "GeoJSON export for the next step",
+  openV7: "Open ATM Version 7",
+  browserExtension: "FIREFOX EXTENSION",
+  readyTransfer: "Ready to transfer",
+  bridgeDescription: "The assisted connection between ATM and Territory Helper. It detects the generated file, asks for confirmation and guides the user to import it without intermediate servers.",
+  bridgePointOne: "Detection of the generated GeoJSON",
+  bridgePointTwo: "Notification and confirmation before transfer",
+  bridgePointThree: "Publicly available on Firefox Add-ons",
+  installBridge: "Install ATM Bridge",
+  flowGenerate: "Generates",
+  flowTransfer: "Transfers",
+  flowManage: "Organizes and manages",
+  navHow: "How it works",
+  tourEyebrow: "INSIDE ATM MANAGER",
+  tourTitle: "The entire operation.<br>One clear journey.",
+  tourText: "From creating a Space to returning a territory, every screen has a clear purpose and every operation stays connected.",
+  tourDashboard: "Overview",
+  tourDashboardText: "Shows the live state of the Space: total, available and assigned territories, requests and recent activity.",
+  tourMap: "Territories and map",
+  tourMapText: "Search for a territory, locate it on the map, inspect its boundary and open its complete record.",
+  tourV7Text: "Generate new territories in the creative module and prepare them for the ATM Manager workflow.",
+  tourAssignments: "Requests and assignments",
+  tourAssignmentsText: "Users request an area; administrators and advanced users review, assign or recall it.",
+  tourWork: "Work and return",
+  tourWorkText: "The streets to complete become visible to the assignee. On return, the user records whether the territory was worked.",
+  tourRest: "Automatic rest period",
+  tourRestText: "A completed territory rests for one month; an administrator can intervene when necessary.",
+  tourPeople: "People and roles",
+  tourPeopleText: "Approve new accounts and assign responsibilities without exposing data from other Spaces.",
+  tourUpdates: "Notifications and activity",
+  tourUpdatesText: "Important events, localized emails and a chronological log keep the team informed.",
+  spaceProtected: "Isolated and protected Space",
+  createsInvites: "Creates and invites",
+  coordinates: "Coordinates operations",
+  worksAssigned: "Works assigned territories",
+  spacesEyebrow: "HOW SPACES WORK",
+  spacesTitle: "Every organization stays in its own Space.",
+  spacesText: "The owner creates a Space and invites the team. People, territories, notifications and emails remain inside that Space, so external organizations cannot access one another.",
+  spacesOne: "A personal identity for every member",
+  spacesTwo: "Controlled approval for new accounts",
+  spacesThree: "Language and communications chosen individually",
+  faqTitle: "Essential answers.",
+  faqOne: "Does ATM Manager replace ATM v7?",
+  faqOneText: "No. ATM v7 is the creative generation module; ATM Manager governs people, territories and operations.",
+  faqTwo: "Can users immediately see the streets to work?",
+  faqTwoText: "No. Before approval they can locate the territory, but operational details become available only after assignment.",
+  faqThree: "Can one Space access another Space’s data?",
+  faqThreeText: "No. Spaces are isolated and permissions restrict reads and operations to the organization’s context.",
+  faqFour: "Does it work on tablets and phones?",
+  faqFourText: "Yes. The responsive interface adapts its main functions to the device size.",
+  faqFive: "How can I request support?",
+  faqFiveText: "Use the support center inside ATM Manager or write to the official address shown at the bottom of this page."
+});
+
+// The showcase presents the complete ATM ecosystem. These values intentionally
+// override the older Manager-only hero copy kept above for backwards compatibility.
+Object.assign(copy.it, {
+  heroTitle: "Tre strumenti.<br><em>Un unico flusso.</em>",
+  heroText: "ATM Version 7 crea i territori, ATM Bridge li trasferisce e ATM Manager coordina persone, assegnazioni e attività.",
+  discover: "Scopri i tre prodotti",
+  managerDescription: "Il centro operativo dell’ecosistema: organizza Space indipendenti, persone, territori, richieste, assegnazioni, sicurezza e attività.",
+  managerPointOne: "Workspace separati e accesso basato sui ruoli",
+  managerPointTwo: "Mappe, assegnazioni e registro operativo",
+  managerPointThree: "MFA, passkey, notifiche e interfaccia multilingua",
+  discoverBridge: "Scopri ATM Bridge",
+  downloadChrome: "Scarica per Chrome"
+});
+
+Object.assign(copy.en, {
+  heroTitle: "Three tools.<br><em>One connected workflow.</em>",
+  heroText: "ATM Version 7 creates territories, ATM Bridge transfers them and ATM Manager coordinates people, assignments and activity.",
+  discover: "Explore all three products",
+  managerDescription: "The ecosystem command center for isolated Spaces, people, territories, requests, assignments, security and activity.",
+  managerPointOne: "Isolated workspaces with role-based access",
+  managerPointTwo: "Maps, assignments and operational history",
+  managerPointThree: "MFA, passkeys, notifications and a multilingual interface",
+  discoverBridge: "Discover ATM Bridge",
+  downloadChrome: "Download for Chrome"
+});
 
 let language=localStorage.getItem("atm-showcase-language")==="en"?"en":"it";
 const languageButton=document.getElementById("languageButton");
-
-function setLanguage(){
-  document.documentElement.lang=language;
-  if(languageButton) languageButton.textContent=language.toUpperCase();
-  document.querySelectorAll("[data-i18n]").forEach(node=>{
-    const value=copy[language][node.dataset.i18n];
-    if(value) node.innerHTML=value;
-  });
-  localStorage.setItem("atm-showcase-language",language);
-}
-
-if(languageButton){
-  languageButton.addEventListener("click",()=>{
-    language=language==="it"?"en":"it";
-    setLanguage();
-  });
-}
-setLanguage();
-
-const observed=document.querySelectorAll(".product-card,.flow-board article,.feature,.security-panel");
-if("IntersectionObserver" in window){
-  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add("in-view");
-      observer.unobserve(entry.target);
-    }
-  }),{threshold:.12});
-  observed.forEach(node=>observer.observe(node));
-}else{
-  observed.forEach(node=>node.classList.add("in-view"));
-}
+function setLanguage(){document.documentElement.lang=language;languageButton.textContent=language.toUpperCase();document.querySelectorAll("[data-i18n]").forEach(node=>{const value=copy[language][node.dataset.i18n];if(value)node.innerHTML=value});localStorage.setItem("atm-showcase-language",language)}
+languageButton.addEventListener("click",()=>{language=language==="it"?"en":"it";setLanguage()});setLanguage();
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("in-view");observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll(".feature,.role-grid article,.workflow li,.security-panel,.suite-card,.suite-flow").forEach(node=>observer.observe(node));

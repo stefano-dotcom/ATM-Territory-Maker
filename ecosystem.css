@@ -1,0 +1,103 @@
+/* ATM ecosystem showcase additions. Loaded after the original styles. */
+.video-frame {
+  aspect-ratio: 16 / 10;
+}
+
+.video-frame video {
+  object-fit: contain;
+  object-position: center;
+  background: #040604;
+}
+
+.suite-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.suite-actions {
+  display: grid;
+  gap: 8px;
+  margin-top: 26px;
+}
+
+.suite-actions .suite-link {
+  margin-top: 0;
+}
+
+.suite-link-secondary {
+  background: #edf1eb;
+}
+
+.suite-link-download {
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--line);
+}
+
+.manager-visual {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle, rgba(145, 255, 22, .12), transparent 48%),
+    linear-gradient(rgba(145, 255, 22, .035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(145, 255, 22, .035) 1px, transparent 1px);
+  background-size: auto, 28px 28px, 28px 28px;
+}
+
+.manager-orbit {
+  position: absolute;
+  border: 1px solid rgba(145, 255, 22, .32);
+  border-radius: 50%;
+}
+
+.manager-orbit-one { width: 72%; height: 54%; }
+.manager-orbit-two { width: 42%; height: 80%; }
+
+.manager-core {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  column-gap: 12px;
+  align-items: center;
+  padding: 16px 18px;
+  background: #0b100b;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .45);
+}
+
+.manager-core img {
+  grid-row: span 2;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+}
+
+.manager-core b { font: 700 14px Manrope; }
+.manager-core small { color: #7d887a; font-size: 8px; }
+
+.manager-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: var(--lime);
+  border-radius: 50%;
+  box-shadow: 0 0 14px var(--lime);
+}
+
+.dot-a { top: 30%; left: 18%; }
+.dot-b { top: 36%; right: 18%; }
+.dot-c { bottom: 20%; left: 46%; }
+
+@media (max-width: 1180px) {
+  .suite-grid { grid-template-columns: 1fr 1fr; }
+  .suite-manager { grid-column: span 2; }
+}
+
+@media (max-width: 850px) {
+  .suite-grid { grid-template-columns: 1fr; }
+  .suite-manager { grid-column: auto; }
+}
+
+@media (max-width: 680px) {
+  .cta > div { flex-direction: column; }
+}
