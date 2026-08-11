@@ -3,249 +3,300 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0b110c">
-  <meta name="description" content="ATM Manager è il workspace professionale per creare, assegnare e gestire territori, persone e attività in spazi organizzativi separati.">
+  <meta name="theme-color" content="#080d09">
+  <meta name="description" content="ATM è un ecosistema di strumenti per creare, trasferire e gestire territori: ATM Manager, ATM Version 7 e ATM Bridge.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://stefano-dotcom.github.io/ATM-Territory-Maker/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="ATM Manager — Territory Operations">
-  <meta property="og:description" content="Territori, persone, sicurezza e attività in un unico workspace.">
+  <meta property="og:title" content="ATM Ecosystem — Manager · Version 7 · Bridge">
+  <meta property="og:description" content="Tre strumenti complementari per creare territori, gestire il lavoro e collegarsi a Territory Helper.">
   <meta property="og:url" content="https://stefano-dotcom.github.io/ATM-Territory-Maker/">
   <meta property="og:image" content="https://stefano-dotcom.github.io/ATM-Territory-Maker/assets/atm-manager-logo.png">
   <meta name="twitter:card" content="summary_large_image">
-  <title>ATM Manager — Territory Operations</title>
+  <title>ATM Ecosystem — Manager · Version 7 · Bridge</title>
   <link rel="icon" href="assets/atm-manager-logo.png">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="suite.css">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"SoftwareApplication",
-    "name":"ATM Manager",
-    "applicationCategory":"BusinessApplication",
-    "operatingSystem":"Web",
-    "url":"https://atm-manager.netlify.app/",
-    "description":"Workspace per la gestione di territori, assegnazioni, persone e attività.",
-    "softwareVersion":"1.0.8",
-    "offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}
-  }
-  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Vai al contenuto</a>
+
   <header class="topbar">
-    <a class="brand" href="#top" aria-label="ATM Manager home">
-      <img src="assets/atm-manager-logo.png" alt="">
-      <span><b>ATM Manager</b><small>Territory Operations</small></span>
+    <a class="brand" href="#top" aria-label="ATM Ecosystem home">
+      <span class="brand-mark">
+        <img src="assets/atm-manager-logo.png" alt="">
+      </span>
+      <span class="brand-copy">
+        <b>ATM</b>
+        <small>Territory Ecosystem</small>
+      </span>
     </a>
+
     <nav aria-label="Navigazione principale">
+      <a href="#products" data-i18n="navProducts">Prodotti</a>
       <a href="#ecosystem" data-i18n="navEcosystem">Ecosistema</a>
-      <a href="#suite" data-i18n="navProducts">Prodotti</a>
-      <a href="#features" data-i18n="navFeatures">Funzioni</a>
-      <a href="#how-it-works" data-i18n="navHow">Come funziona</a>
-      <a href="#roles" data-i18n="navRoles">Ruoli</a>
+      <a href="#manager" data-i18n="navManager">ATM Manager</a>
       <a href="#security" data-i18n="navSecurity">Sicurezza</a>
     </nav>
+
     <div class="top-actions">
       <button id="languageButton" class="language" type="button" aria-label="Cambia lingua">IT</button>
-      <a class="button button-light" href="https://atm-manager.netlify.app/" target="_blank" rel="noopener"><span data-i18n="openManager">Apri Manager</span><span>↗</span></a>
+      <a class="quick-link" href="https://atm-manager.netlify.app/" target="_blank" rel="noopener">Manager ↗</a>
+      <a class="quick-link quick-link-v7" href="https://atm-v7.netlify.app/" target="_blank" rel="noopener">v7 ↗</a>
+      <a class="quick-link quick-link-bridge" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener" data-i18n="installShort">Installa Bridge</a>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-copy reveal">
-        <p class="eyebrow"><i></i><span>ATM MANAGER · VERSION 1.0.8</span></p>
-        <h1 data-i18n="heroTitle">Ogni territorio.<br><em>Una sola regia.</em></h1>
-        <p class="lead" data-i18n="heroText">Un workspace professionale per organizzare territori, persone, assegnazioni e sicurezza senza perdere il controllo.</p>
+        <p class="eyebrow"><i></i><span data-i18n="heroEyebrow">ATM TERRITORY ECOSYSTEM</span></p>
+        <h1 data-i18n="heroTitle">Tre strumenti.<br><em>Un solo ecosistema.</em></h1>
+        <p class="lead" data-i18n="heroText">Crea territori con ATM Version 7, coordina persone e assegnazioni con ATM Manager e usa ATM Bridge per collegare il flusso a Territory Helper.</p>
+
         <div class="hero-actions">
-          <a class="button button-primary" href="https://atm-manager.netlify.app/" target="_blank" rel="noopener"><span data-i18n="enterWorkspace">Entra nel workspace</span><span>↗</span></a>
-          <a class="button button-quiet" href="#features"><span data-i18n="discover">Scopri la piattaforma</span><span>↓</span></a>
+          <a class="button button-primary" href="https://atm-manager.netlify.app/" target="_blank" rel="noopener">
+            <span data-i18n="openManager">Apri ATM Manager</span><span>↗</span>
+          </a>
+          <a class="button button-secondary" href="https://atm-v7.netlify.app/" target="_blank" rel="noopener">
+            <span data-i18n="openV7">Apri ATM Version 7</span><span>↗</span>
+          </a>
+          <a class="button button-quiet" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">
+            <span data-i18n="installBridge">Installa ATM Bridge</span><span>↗</span>
+          </a>
         </div>
-        <div class="trust"><span data-i18n="webApp">Web app responsive</span><span data-i18n="roleAccess">Accesso per ruoli</span><span data-i18n="privateSpaces">Space separati</span></div>
-      </div>
-      <div class="hero-media reveal delay" aria-label="Animazione ATM Manager">
-        <div class="video-frame">
-          <video autoplay muted loop playsinline preload="metadata" poster="assets/atm-manager-logo.png">
-            <source src="assets/atm-manager-intro.mp4" type="video/mp4">
-          </video>
-          <div class="video-meta"><span><i></i> LIVE WORKSPACE</span><span>ATM / 1.0.8</span></div>
+
+        <div class="trust">
+          <span data-i18n="trustOne">3 prodotti complementari</span>
+          <span data-i18n="trustTwo">Web app responsive</span>
+          <span data-i18n="trustThree">Estensione Firefox</span>
         </div>
       </div>
-    </section>
 
-    <section class="metrics" aria-label="Caratteristiche principali">
-      <article><b>01</b><span data-i18n="metricSpaces">Space indipendenti</span></article>
-      <article><b>04</b><span data-i18n="metricRoles">Livelli di accesso</span></article>
-      <article><b>24/7</b><span data-i18n="metricRealtime">Attività sincronizzate</span></article>
-      <article><b>AAL2</b><span data-i18n="metricSecurity">Protezione avanzata</span></article>
-    </section>
-
-    <section class="section ecosystem" id="ecosystem">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="ecosystemEyebrow">IL MODELLO A GIRASOLE</p>
-        <h2 data-i18n="ecosystemTitle">Un centro operativo.<br>Tutto intorno, connesso.</h2>
-        <p data-i18n="ecosystemText">ATM Manager è il fulcro. Ogni modulo è un petalo specializzato che condivide lo stesso flusso di lavoro.</p>
-      </div>
-      <div class="flower" aria-label="Ecosistema ATM Manager">
-        <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
-        <article class="petal petal-top"><b>ATM v7</b><small data-i18n="petalCreate">Crea territori</small></article>
-        <article class="petal petal-right"><b data-i18n="territories">Territori</b><small data-i18n="petalView">Visualizza e modifica</small></article>
-        <article class="petal petal-bottom"><b data-i18n="security">Sicurezza</b><small>MFA · Passkey</small></article>
-        <article class="petal petal-left"><b data-i18n="people">Persone</b><small data-i18n="petalRoles">Accessi e ruoli</small></article>
-        <div class="core"><img src="assets/atm-manager-logo.png" alt=""><span><b>ATM<br>Manager</b><small data-i18n="controlCenter">Centro operativo</small></span></div>
-      </div>
-    </section>
-
-    <section class="suite-products section" id="suite">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="suiteEyebrow">L’ECOSISTEMA COMPLETO</p>
-        <h2 data-i18n="suiteTitle">Dal disegno al trasferimento.<br>Tre prodotti, un solo flusso.</h2>
-        <p data-i18n="suiteText">ATM Manager coordina il lavoro, ATM Version 7 crea i territori e ATM Bridge accompagna il trasferimento verso Territory Helper.</p>
-      </div>
-      <div class="suite-grid">
-        <article class="suite-card suite-v7">
-          <div class="suite-card-top">
-            <img src="assets/atm-v7-logo.png" alt="ATM Version 7">
-            <span data-i18n="creativeModule">MODULO CREATIVO</span>
+      <div class="hero-media reveal delay" aria-label="Introduzione video ATM Manager">
+        <div class="video-shell">
+          <div class="video-head">
+            <span><i></i> ATM MANAGER</span>
+            <span>LIVE WORKSPACE</span>
           </div>
-          <div class="suite-visual v7-visual" aria-hidden="true">
-            <span></span><span></span><span></span><i>ATM v7</i>
+          <div class="video-stage">
+            <video autoplay muted loop playsinline preload="metadata" poster="assets/atm-manager-logo.png">
+              <source src="assets/atm-manager-intro.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-foot">
+            <span data-i18n="videoCaption">Il centro operativo dell’ecosistema ATM</span>
+            <span>ATM / 1.0.8</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Panoramica ATM">
+      <article><b>03</b><span data-i18n="metricProducts">Prodotti collegati</span></article>
+      <article><b>01</b><span data-i18n="metricFlow">Ecosistema coerente</span></article>
+      <article><b>24/7</b><span data-i18n="metricWeb">Accesso web</span></article>
+      <article><b>↗</b><span data-i18n="metricBridge">Bridge installabile</span></article>
+    </section>
+
+    <section class="section products" id="products">
+      <div class="section-heading">
+        <p class="eyebrow"><i></i><span data-i18n="productsEyebrow">I PRODOTTI ATM</span></p>
+        <h2 data-i18n="productsTitle">Ogni strumento ha un ruolo.<br>Insieme lavorano meglio.</h2>
+        <p data-i18n="productsText">La vetrina ATM riunisce il centro operativo, il creatore di territori e il collegamento con Territory Helper in un’unica esperienza chiara.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card manager-card">
+          <div class="product-card-top">
+            <img src="assets/atm-manager-logo.png" alt="ATM Manager">
+            <span data-i18n="managerBadge">CENTRO OPERATIVO</span>
+          </div>
+          <div class="product-preview manager-preview" aria-hidden="true">
+            <div class="mock-sidebar">
+              <i></i><i></i><i></i><i></i>
+            </div>
+            <div class="mock-dashboard">
+              <div class="mock-title"></div>
+              <div class="mock-stats"><span></span><span></span><span></span></div>
+              <div class="mock-map"><b></b><b></b><b></b></div>
+            </div>
+          </div>
+          <h3>ATM Manager</h3>
+          <p data-i18n="managerDescription">Il cuore operativo per organizzare territori, persone, richieste, assegnazioni, restituzioni, ruoli e sicurezza dentro Space separati.</p>
+          <ul>
+            <li data-i18n="managerPointOne">Gestione completa di territori e assegnazioni</li>
+            <li data-i18n="managerPointTwo">Account, ruoli, Space, notifiche e cronologia</li>
+            <li data-i18n="managerPointThree">Interfaccia responsive con controlli di sicurezza avanzati</li>
+          </ul>
+          <a class="product-link" href="https://atm-manager.netlify.app/" target="_blank" rel="noopener">
+            <span data-i18n="openManager">Apri ATM Manager</span><span>↗</span>
+          </a>
+        </article>
+
+        <article class="product-card v7-card">
+          <div class="product-card-top">
+            <img src="assets/atm-v7-logo.png" alt="ATM Version 7">
+            <span data-i18n="v7Badge">CREAZIONE TERRITORI</span>
+          </div>
+          <div class="product-preview map-preview" aria-hidden="true">
+            <span class="map-grid"></span>
+            <i class="shape shape-one"></i>
+            <i class="shape shape-two"></i>
+            <i class="shape shape-three"></i>
+            <strong>ATM v7</strong>
           </div>
           <h3>ATM Version 7</h3>
-          <p data-i18n="v7Description">Trasforma un’area geografica in territori organizzati. Permette di generare perimetri, controllare il risultato ed esportare i dati pronti per il flusso operativo.</p>
+          <p data-i18n="v7Description">Il modulo creativo dedicato alla generazione e suddivisione delle aree geografiche in territori pronti per il flusso operativo.</p>
           <ul>
             <li data-i18n="v7PointOne">Generazione e suddivisione dei territori</li>
             <li data-i18n="v7PointTwo">Anteprima cartografica e controllo dei perimetri</li>
-            <li data-i18n="v7PointThree">Esportazione GeoJSON per l’utilizzo successivo</li>
+            <li data-i18n="v7PointThree">Esportazione GeoJSON pronta per l’utilizzo successivo</li>
           </ul>
-          <a class="suite-link" href="https://atm-v7.netlify.app/" target="_blank" rel="noopener"><span data-i18n="openV7">Apri ATM Version 7</span><span>↗</span></a>
+          <a class="product-link" href="https://atm-v7.netlify.app/" target="_blank" rel="noopener">
+            <span data-i18n="openV7">Apri ATM Version 7</span><span>↗</span>
+          </a>
         </article>
 
-        <article class="suite-card suite-bridge">
-          <div class="suite-card-top">
+        <article class="product-card bridge-card">
+          <div class="product-card-top">
             <img src="assets/atm-bridge-logo.png" alt="ATM Bridge">
-            <span data-i18n="browserExtension">ESTENSIONE FIREFOX</span>
+            <span data-i18n="bridgeBadge">ESTENSIONE FIREFOX</span>
           </div>
-          <div class="suite-visual bridge-visual" aria-hidden="true">
-            <div><b>ATM Bridge</b><small>Territory Helper connector</small></div>
-            <div class="bridge-file"><i>GEO</i><span><b>ATM_Territories.geojson</b><small data-i18n="readyTransfer">Pronto per il trasferimento</small></span><strong>✓</strong></div>
-            <span class="bridge-progress"></span>
+          <div class="product-preview bridge-preview" aria-hidden="true">
+            <div class="bridge-browser">
+              <div class="browser-bar"><i></i><i></i><i></i></div>
+              <div class="bridge-file">
+                <span>GEO</span>
+                <div><b>ATM_Territories.geojson</b><small>Ready for transfer</small></div>
+                <strong>✓</strong>
+              </div>
+              <div class="bridge-line"><i></i></div>
+            </div>
           </div>
           <h3>ATM Bridge</h3>
-          <p data-i18n="bridgeDescription">È il collegamento assistito tra ATM e Territory Helper. Rileva il file generato, mostra una conferma e guida l’utente verso l’importazione senza server intermedi.</p>
+          <p data-i18n="bridgeDescription">L’estensione che accompagna il trasferimento dei file generati da ATM verso Territory Helper, con conferma prima dell’azione e senza server intermedi.</p>
           <ul>
             <li data-i18n="bridgePointOne">Rilevamento del GeoJSON generato</li>
-            <li data-i18n="bridgePointTwo">Notifica e conferma prima del trasferimento</li>
-            <li data-i18n="bridgePointThree">Disponibile pubblicamente su Firefox Add-ons</li>
+            <li data-i18n="bridgePointTwo">Conferma guidata prima del trasferimento</li>
+            <li data-i18n="bridgePointThree">Installazione pubblica tramite Firefox Add-ons</li>
           </ul>
-          <a class="suite-link" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener"><span data-i18n="installBridge">Installa ATM Bridge</span><span>↗</span></a>
+          <a class="product-link" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">
+            <span data-i18n="installBridge">Installa ATM Bridge</span><span>↗</span>
+          </a>
         </article>
       </div>
-      <div class="suite-flow" aria-label="Flusso dei prodotti ATM">
-        <span><b>01</b><i>ATM v7</i><small data-i18n="flowGenerate">Genera</small></span>
-        <strong>→</strong>
-        <span><b>02</b><i>ATM Bridge</i><small data-i18n="flowTransfer">Trasferisce</small></span>
-        <strong>→</strong>
-        <span><b>03</b><i>ATM Manager</i><small data-i18n="flowManage">Organizza e gestisce</small></span>
+    </section>
+
+    <section class="section ecosystem" id="ecosystem">
+      <div class="section-heading ecosystem-copy">
+        <p class="eyebrow"><i></i><span data-i18n="ecosystemEyebrow">COME SI COMPLETANO</span></p>
+        <h2 data-i18n="ecosystemTitle">Tre specialisti.<br>Una sola esperienza.</h2>
+        <p data-i18n="ecosystemText">ATM Version 7 pensa alla creazione, ATM Manager governa le operazioni quotidiane e ATM Bridge rende più semplice il collegamento con Territory Helper.</p>
+      </div>
+
+      <div class="flow-board" aria-label="Ecosistema ATM">
+        <article>
+          <span>01</span>
+          <div class="flow-icon">◇</div>
+          <small data-i18n="flowLabelOne">CREA</small>
+          <h3>ATM Version 7</h3>
+          <p data-i18n="flowTextOne">Disegna, genera e controlla i territori sulla mappa.</p>
+          <a href="https://atm-v7.netlify.app/" target="_blank" rel="noopener" data-i18n="openProduct">Apri prodotto ↗</a>
+        </article>
+        <div class="flow-arrow">→</div>
+        <article>
+          <span>02</span>
+          <div class="flow-icon">◎</div>
+          <small data-i18n="flowLabelTwo">GESTISCI</small>
+          <h3>ATM Manager</h3>
+          <p data-i18n="flowTextTwo">Organizza persone, territori, richieste, ruoli e attività.</p>
+          <a href="https://atm-manager.netlify.app/" target="_blank" rel="noopener" data-i18n="openProduct">Apri prodotto ↗</a>
+        </article>
+        <div class="flow-arrow">→</div>
+        <article>
+          <span>03</span>
+          <div class="flow-icon">↗</div>
+          <small data-i18n="flowLabelThree">COLLEGA</small>
+          <h3>ATM Bridge</h3>
+          <p data-i18n="flowTextThree">Accompagna il trasferimento verso Territory Helper.</p>
+          <a href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener" data-i18n="installProduct">Installa estensione ↗</a>
+        </article>
       </div>
     </section>
 
-    <section class="section" id="features">
+    <section class="section manager-deep" id="manager">
       <div class="section-heading compact">
-        <p class="eyebrow">PLATFORM</p>
-        <h2 data-i18n="featuresTitle">Progettato per il lavoro reale.</h2>
+        <p class="eyebrow"><i></i><span data-i18n="managerDeepEyebrow">DENTRO ATM MANAGER</span></p>
+        <h2 data-i18n="managerDeepTitle">Il centro di controllo del lavoro reale.</h2>
+        <p data-i18n="managerDeepText">ATM Manager riunisce il lavoro quotidiano in un’unica interfaccia: dalla richiesta di un territorio alla restituzione, fino alla gestione di utenti e privilegi.</p>
       </div>
+
       <div class="feature-grid">
-        <article class="feature feature-map"><span class="number">01</span><div class="mini-map"><i></i><i></i><i></i></div><h3 data-i18n="featureTerritories">Territori vivi, non file statici</h3><p data-i18n="featureTerritoriesText">Importa KML o JSON, crea sezioni, modifica confini e consulta ogni area sulla mappa.</p></article>
-        <article class="feature"><span class="number">02</span><div class="assignment-card"><i>SC</i><span><b data-i18n="assigned">Territorio assegnato</b><small>Attard 6 · 4 mesi</small></span><strong>✓</strong></div><h3 data-i18n="featureAssignments">Assegnazioni complete</h3><p data-i18n="featureAssignmentsText">Richieste, approvazioni, ritiri, riposo automatico e cronologia in un solo registro.</p></article>
-        <article class="feature"><span class="number">03</span><div class="role-stack"><span>USER</span><span>ADVANCED</span><span>ADMIN</span></div><h3 data-i18n="featureRoles">Il ruolo giusto, al momento giusto</h3><p data-i18n="featureRolesText">Ogni persona vede soltanto gli strumenti e i dati necessari al proprio incarico.</p></article>
-        <article class="feature feature-wide"><span class="number">04</span><div><h3 data-i18n="featureInternational">Nato per lavorare oltre i confini</h3><p data-i18n="featureInternationalText">Preferenze linguistiche personali, email localizzate e Space isolati permettono a gruppi diversi di operare senza confusione.</p></div><div class="languages"><span>IT</span><span>EN</span><span>ES</span><span>FR</span><span>日本語</span><span>中文</span></div></article>
+        <article class="feature">
+          <span class="feature-number">01</span>
+          <div class="feature-art map-art"><i></i><i></i><i></i></div>
+          <h3 data-i18n="featureTerritories">Territori vivi</h3>
+          <p data-i18n="featureTerritoriesText">Consulta la mappa, individua le aree, controlla i perimetri e mantieni le informazioni operative nello stesso posto.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-number">02</span>
+          <div class="feature-art assignment-art"><span>SC</span><div><b>Attard 6</b><small>Assigned · 4 months</small></div><strong>✓</strong></div>
+          <h3 data-i18n="featureAssignments">Assegnazioni complete</h3>
+          <p data-i18n="featureAssignmentsText">Richieste, approvazioni, assegnazioni, ritiri e restituzioni rimangono leggibili e tracciabili.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-number">03</span>
+          <div class="feature-art roles-art"><i>USER</i><i>ADVANCED</i><i>ADMIN</i></div>
+          <h3 data-i18n="featureRoles">Ruoli chiari</h3>
+          <p data-i18n="featureRolesText">Ogni persona vede gli strumenti coerenti con il proprio livello di responsabilità.</p>
+        </article>
       </div>
     </section>
 
-    <section class="product-tour section" id="how-it-works">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="tourEyebrow">DENTRO ATM MANAGER</p>
-        <h2 data-i18n="tourTitle">Tutto il lavoro.<br>Un solo percorso.</h2>
-        <p data-i18n="tourText">Dalla creazione dello Space alla restituzione di un territorio: ogni schermata ha uno scopo preciso e ogni operazione resta collegata.</p>
+    <section class="section security" id="security">
+      <div class="security-copy">
+        <p class="eyebrow"><i></i><span>IDENTITY &amp; ACCESS</span></p>
+        <h2 data-i18n="securityTitle">Sicurezza incorporata nel flusso.</h2>
+        <p data-i18n="securityText">Approvazione degli account, separazione degli Space, controlli per ruolo, MFA, passkey e registro attività aiutano a proteggere le operazioni quotidiane.</p>
+        <a class="text-link" href="mailto:atmsupportcentre@gmail.com">
+          <span data-i18n="contactSupport">Contatta il supporto</span><span>↗</span>
+        </a>
       </div>
-      <div class="tour-grid">
-        <article><span>01</span><div class="tour-icon">⌂</div><h3 data-i18n="tourDashboard">Panoramica</h3><p data-i18n="tourDashboardText">Mostra lo stato reale dello Space: territori totali, disponibili, assegnati, richieste e attività recenti.</p></article>
-        <article><span>02</span><div class="tour-icon">◇</div><h3 data-i18n="tourMap">Territori e mappa</h3><p data-i18n="tourMapText">Cerca un territorio, localizzalo sulla mappa, consulta il perimetro e apri la sua scheda completa.</p></article>
-        <article><span>03</span><div class="tour-icon">✦</div><h3>ATM v7</h3><p data-i18n="tourV7Text">Genera nuovi territori nel modulo creativo e preparali per il flusso operativo di ATM Manager.</p></article>
-        <article><span>04</span><div class="tour-icon">↗</div><h3 data-i18n="tourAssignments">Richieste e assegnazioni</h3><p data-i18n="tourAssignmentsText">Gli utenti richiedono un’area; amministratori e utenti avanzati la valutano, assegnano o ritirano.</p></article>
-        <article><span>05</span><div class="tour-icon">✓</div><h3 data-i18n="tourWork">Lavorazione e restituzione</h3><p data-i18n="tourWorkText">Le strade da completare diventano visibili all’assegnatario. Alla restituzione si indica se il territorio è stato lavorato.</p></article>
-        <article><span>06</span><div class="tour-icon">◷</div><h3 data-i18n="tourRest">Riposo automatico</h3><p data-i18n="tourRestText">Un territorio completato riposa per un mese; un amministratore può intervenire quando necessario.</p></article>
-        <article><span>07</span><div class="tour-icon">◎</div><h3 data-i18n="tourPeople">Persone e ruoli</h3><p data-i18n="tourPeopleText">Approva nuovi account e assegna responsabilità senza esporre dati appartenenti ad altri Space.</p></article>
-        <article><span>08</span><div class="tour-icon">⌁</div><h3 data-i18n="tourUpdates">Notifiche e attività</h3><p data-i18n="tourUpdatesText">Eventi importanti, email localizzate e registro cronologico mantengono il team aggiornato.</p></article>
-      </div>
-    </section>
 
-    <section class="workflow section">
-      <div class="section-heading compact"><p class="eyebrow" data-i18n="workflowEyebrow">DAL PRIMO ACCESSO ALLA CONSEGNA</p><h2 data-i18n="workflowTitle">Un flusso leggibile, dall’inizio alla fine.</h2></div>
-      <ol>
-        <li><span>01</span><div><b data-i18n="flowCreate">Crea il tuo Space</b><p data-i18n="flowCreateText">Il primo responsabile configura uno spazio organizzativo isolato.</p></div></li>
-        <li><span>02</span><div><b data-i18n="flowInvite">Invita il team</b><p data-i18n="flowInviteText">Utenti e amministratori entrano attraverso un invito controllato.</p></div></li>
-        <li><span>03</span><div><b data-i18n="flowOrganize">Organizza e assegna</b><p data-i18n="flowOrganizeText">Territori, sezioni e richieste rimangono sincronizzati.</p></div></li>
-        <li><span>04</span><div><b data-i18n="flowComplete">Completa e monitora</b><p data-i18n="flowCompleteText">Restituzioni, periodi di riposo e attività restano tracciati.</p></div></li>
-      </ol>
-    </section>
-
-    <section class="access-story section">
-      <div class="access-visual">
-        <div class="space-card"><small>SPACE</small><b>Malta Central</b><span data-i18n="spaceProtected">Spazio isolato e protetto</span></div>
-        <div class="access-line"></div>
-        <div class="member-row"><i>SC</i><span><b data-i18n="owner">Proprietario dello Space</b><small data-i18n="createsInvites">Crea e invita</small></span></div>
-        <div class="member-row"><i>AM</i><span><b data-i18n="admin">Amministratore</b><small data-i18n="coordinates">Coordina il lavoro</small></span></div>
-        <div class="member-row"><i>UT</i><span><b data-i18n="user">Utente</b><small data-i18n="worksAssigned">Lavora sui territori assegnati</small></span></div>
-      </div>
-      <div class="access-copy">
-        <p class="eyebrow" data-i18n="spacesEyebrow">COME FUNZIONANO GLI SPACE</p>
-        <h2 data-i18n="spacesTitle">Ogni organizzazione resta nel proprio spazio.</h2>
-        <p data-i18n="spacesText">Il responsabile crea uno Space e invita il proprio team. Persone, territori, notifiche ed email rimangono confinati in quello Space: le organizzazioni esterne non possono consultarsi a vicenda.</p>
-        <ul><li data-i18n="spacesOne">Un’identità personale per ogni membro</li><li data-i18n="spacesTwo">Approvazione controllata dei nuovi account</li><li data-i18n="spacesThree">Lingua e comunicazioni scelte individualmente</li></ul>
+      <div class="security-panel">
+        <div><span>01</span><b data-i18n="secureSpaces">Separazione degli Space</b><i>ACTIVE</i></div>
+        <div><span>02</span><b data-i18n="secureMfa">MFA e passkey</b><i>ACTIVE</i></div>
+        <div><span>03</span><b data-i18n="secureAudit">Registro attività</b><i>ACTIVE</i></div>
+        <div><span>04</span><b data-i18n="secureApproval">Approvazione controllata</b><i>ACTIVE</i></div>
       </div>
     </section>
 
-    <section class="section roles" id="roles">
-      <div class="section-heading compact"><p class="eyebrow" data-i18n="rolesEyebrow">ACCESS CONTROL</p><h2 data-i18n="rolesTitle">Responsabilità chiare.</h2></div>
-      <div class="role-grid">
-        <article><small>01</small><h3 data-i18n="user">Utente</h3><p data-i18n="userText">Consulta i propri territori, invia richieste e restituisce il lavoro.</p></article>
-        <article><small>02</small><h3 data-i18n="advanced">Utente avanzato</h3><p data-i18n="advancedText">Gestisce operazioni territoriali senza amministrare gli account.</p></article>
-        <article><small>03</small><h3 data-i18n="admin">Amministratore</h3><p data-i18n="adminText">Coordina persone, ruoli, territori, notifiche e attività del proprio Space.</p></article>
-        <article><small>04</small><h3 data-i18n="owner">Proprietario dello Space</h3><p data-i18n="ownerText">Governa il ciclo di vita dello spazio e le operazioni più sensibili.</p></article>
-      </div>
-    </section>
-
-    <section class="security section" id="security">
-      <div class="security-copy"><p class="eyebrow">IDENTITY &amp; ACCESS</p><h2 data-i18n="securityTitle">Sicurezza incorporata nel flusso.</h2><p data-i18n="securityText">Approvazione degli account, isolamento per Space, controlli per ruolo, MFA, passkey e registro attività proteggono le operazioni quotidiane.</p><a class="text-link" href="mailto:atmsupportcentre@gmail.com"><span data-i18n="contactSupport">Contatta il supporto</span><span>↗</span></a></div>
-      <div class="security-panel"><div><span>01</span><b data-i18n="secureSpaces">Separazione degli Space</b><i>ACTIVE</i></div><div><span>02</span><b data-i18n="secureMfa">MFA e passkey</b><i>ACTIVE</i></div><div><span>03</span><b data-i18n="secureAudit">Audit delle attività</b><i>ACTIVE</i></div><div><span>04</span><b data-i18n="secureApproval">Approvazione controllata</b><i>ACTIVE</i></div></div>
-    </section>
-
-    <section class="cta section">
-      <p class="eyebrow"><i></i><span data-i18n="ready">WORKSPACE PRONTO</span></p>
-      <h2 data-i18n="ctaTitle">Il territorio è complesso.<br><em>Gestirlo non deve esserlo.</em></h2>
-      <div><a class="button button-primary" href="https://atm-manager.netlify.app/" target="_blank" rel="noopener"><span data-i18n="openATM">Apri ATM Manager</span><span>↗</span></a><a class="button button-quiet" href="https://atm-v7.netlify.app/" target="_blank" rel="noopener"><span>ATM Version 7</span><span>↗</span></a></div>
-    </section>
-
-    <section class="faq section" id="faq">
-      <div class="section-heading compact"><p class="eyebrow">FAQ</p><h2 data-i18n="faqTitle">Le risposte essenziali.</h2></div>
-      <div class="faq-list">
-        <details><summary data-i18n="faqOne">ATM Manager sostituisce ATM v7?</summary><p data-i18n="faqOneText">No. ATM v7 è il modulo creativo dedicato alla generazione; ATM Manager governa persone, territori e operazioni.</p></details>
-        <details><summary data-i18n="faqTwo">Gli utenti vedono subito le strade da lavorare?</summary><p data-i18n="faqTwoText">No. Prima dell’approvazione possono localizzare il territorio, ma i dettagli operativi diventano disponibili soltanto dopo l’assegnazione.</p></details>
-        <details><summary data-i18n="faqThree">Uno Space può vedere i dati di un altro?</summary><p data-i18n="faqThreeText">No. Gli Space sono separati e le autorizzazioni limitano letture e operazioni al contesto dell’organizzazione.</p></details>
-        <details><summary data-i18n="faqFour">Funziona su tablet e telefono?</summary><p data-i18n="faqFourText">Sì. L’interfaccia è responsive e adatta le funzioni principali alle dimensioni del dispositivo.</p></details>
-        <details><summary data-i18n="faqFive">Come si richiede assistenza?</summary><p data-i18n="faqFiveText">È disponibile un centro supporto dentro ATM Manager oppure puoi scrivere all’indirizzo ufficiale indicato in fondo alla pagina.</p></details>
+    <section class="section final-cta">
+      <p class="eyebrow"><i></i><span data-i18n="ctaEyebrow">SCEGLI IL TUO STRUMENTO</span></p>
+      <h2 data-i18n="ctaTitle">Crea. Gestisci. Collega.<br><em>Tutto dentro ATM.</em></h2>
+      <p data-i18n="ctaText">Accedi subito al prodotto che ti serve oppure installa ATM Bridge dal catalogo ufficiale Firefox Add-ons.</p>
+      <div class="cta-actions">
+        <a class="button button-primary" href="https://atm-manager.netlify.app/" target="_blank" rel="noopener"><span data-i18n="openManager">Apri ATM Manager</span><span>↗</span></a>
+        <a class="button button-secondary" href="https://atm-v7.netlify.app/" target="_blank" rel="noopener"><span data-i18n="openV7">Apri ATM Version 7</span><span>↗</span></a>
+        <a class="button button-quiet" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener"><span data-i18n="installBridge">Installa ATM Bridge</span><span>↗</span></a>
       </div>
     </section>
   </main>
 
   <footer>
-    <a class="brand" href="#top"><img src="assets/atm-manager-logo.png" alt=""><span><b>ATM Manager</b><small>Territory Operations</small></span></a>
-    <p>Version 1.0.8 · © 2026 ATM Manager</p>
-    <div><a href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">ATM Bridge</a><a href="mailto:atmsupportcentre@gmail.com" data-i18n="support">Supporto</a></div>
+    <a class="brand" href="#top">
+      <span class="brand-mark"><img src="assets/atm-manager-logo.png" alt=""></span>
+      <span class="brand-copy"><b>ATM</b><small>Territory Ecosystem</small></span>
+    </a>
+    <p>ATM Manager · ATM Version 7 · ATM Bridge · © 2026</p>
+    <div>
+      <a href="https://atm-manager.netlify.app/" target="_blank" rel="noopener">Manager</a>
+      <a href="https://atm-v7.netlify.app/" target="_blank" rel="noopener">Version 7</a>
+      <a href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">Bridge</a>
+      <a href="mailto:atmsupportcentre@gmail.com" data-i18n="support">Supporto</a>
+    </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
