@@ -155,9 +155,83 @@ Object.assign(copy.en, {
   downloadChrome: "Download for Chrome"
 });
 
+Object.assign(copy.it, {
+  depthEyebrow: "TRE PRODOTTI, ESPLORATI DAVVERO",
+  depthTitle: "Ogni fase ha il suo strumento.<br>Ogni strumento ha uno scopo.",
+  depthText: "Non una raccolta di funzioni scollegate, ma un ecosistema progettato per accompagnare il territorio dalla prima linea sulla mappa fino alla gestione quotidiana.",
+  managerDeepTitle: "Il centro operativo che mantiene tutto sotto controllo.",
+  managerDeepText: "ATM Manager riunisce territori, persone e decisioni in uno Space isolato. Ogni membro vede soltanto ciò che gli compete, mentre amministratori e utenti avanzati governano il ciclo operativo senza perdere la cronologia.",
+  managerCapabilityOne: "Space indipendenti",
+  managerCapabilityOneText: "Dati, persone ed email separati per ogni organizzazione.",
+  managerCapabilityTwo: "Operazioni tracciabili",
+  managerCapabilityTwoText: "Richieste, assegnazioni, restituzioni e periodi di riposo.",
+  managerCapabilityThree: "Sicurezza reale",
+  managerCapabilityThreeText: "Ruoli, MFA, passkey e audit log integrati nel flusso.",
+  openManagerFull: "Esplora ATM Manager",
+  v7MotionCaption: "Dal concetto al territorio",
+  v7DeepTitle: "La parte creativa del sistema.",
+  v7DeepText: "ATM Version 7 parte da un’area geografica e la trasforma in territori coerenti. La generazione non è una scatola nera: puoi osservare il risultato, verificare i perimetri e preparare un file pronto per il passaggio successivo.",
+  v7StepOne: "Definisci l’area",
+  v7StepOneText: "Scegli il punto di partenza e il contesto cartografico.",
+  v7StepTwo: "Genera e controlla",
+  v7StepTwoText: "Visualizza la suddivisione prima di proseguire.",
+  v7StepThree: "Esporta il risultato",
+  v7StepThreeText: "Ottieni il GeoJSON pronto per Bridge o Manager.",
+  openV7Full: "Inizia con ATM Version 7",
+  bridgeDeepTitle: "Il passaggio assistito, senza passaggi oscuri.",
+  bridgeDeepText: "ATM Bridge riconosce il GeoJSON creato da ATM, informa l’utente e prepara il trasferimento verso Territory Helper. Il controllo resta sempre visibile: nessuna azione parte senza conferma.",
+  bridgePrivacyTitle: "Progettato con un approccio essenziale alla privacy.",
+  bridgePrivacyText: "Il file rimane nel browser durante il trasferimento e non passa attraverso server intermedi ATM.",
+  installFirefoxFull: "Installa da Firefox Add-ons",
+  bridgeGuide: "Apri la guida completa",
+  bridgeDetected: "File rilevato e pronto per il controllo.",
+  continueHelper: "Continua su Territory Helper"
+});
+
+Object.assign(copy.en, {
+  depthEyebrow: "THREE PRODUCTS, PROPERLY EXPLORED",
+  depthTitle: "A purpose-built tool for every stage.<br>One system from end to end.",
+  depthText: "Not a collection of disconnected features, but an ecosystem designed to follow a territory from the first line on the map to everyday operations.",
+  managerDeepTitle: "The operations center that keeps everything in view.",
+  managerDeepText: "ATM Manager brings territories, people and decisions into an isolated Space. Every member sees only what they need, while administrators and advanced users govern the complete lifecycle without losing its history.",
+  managerCapabilityOne: "Independent Spaces",
+  managerCapabilityOneText: "Data, people and emails isolated for every organization.",
+  managerCapabilityTwo: "Traceable operations",
+  managerCapabilityTwoText: "Requests, assignments, returns and rest periods.",
+  managerCapabilityThree: "Practical security",
+  managerCapabilityThreeText: "Roles, MFA, passkeys and audit history built into the workflow.",
+  openManagerFull: "Explore ATM Manager",
+  v7MotionCaption: "From concept to territory",
+  v7DeepTitle: "The creative side of the system.",
+  v7DeepText: "ATM Version 7 starts with a geographic area and turns it into coherent territories. Generation is not a black box: review the result, inspect its boundaries and prepare a file for the next step.",
+  v7StepOne: "Define the area",
+  v7StepOneText: "Choose the starting point and mapping context.",
+  v7StepTwo: "Generate and review",
+  v7StepTwoText: "Inspect the subdivision before moving forward.",
+  v7StepThree: "Export the result",
+  v7StepThreeText: "Get a GeoJSON ready for Bridge or Manager.",
+  openV7Full: "Start with ATM Version 7",
+  bridgeDeepTitle: "An assisted handoff, with nothing hidden.",
+  bridgeDeepText: "ATM Bridge recognizes the GeoJSON created by ATM, informs the user and prepares the transfer to Territory Helper. Control remains visible at every step and nothing proceeds without confirmation.",
+  bridgePrivacyTitle: "Designed around an essential privacy model.",
+  bridgePrivacyText: "The file remains in the browser during transfer and does not pass through intermediate ATM servers.",
+  installFirefoxFull: "Install from Firefox Add-ons",
+  bridgeGuide: "Open the complete guide",
+  bridgeDetected: "File detected and ready for review.",
+  continueHelper: "Continue to Territory Helper"
+});
+
 let language=localStorage.getItem("atm-showcase-language")==="en"?"en":"it";
 const languageButton=document.getElementById("languageButton");
 function setLanguage(){document.documentElement.lang=language;languageButton.textContent=language.toUpperCase();document.querySelectorAll("[data-i18n]").forEach(node=>{const value=copy[language][node.dataset.i18n];if(value)node.innerHTML=value});localStorage.setItem("atm-showcase-language",language)}
 languageButton.addEventListener("click",()=>{language=language==="it"?"en":"it";setLanguage()});setLanguage();
 const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("in-view");observer.unobserve(entry.target)}}),{threshold:.12});
 document.querySelectorAll(".feature,.role-grid article,.workflow li,.security-panel,.suite-card,.suite-flow").forEach(node=>observer.observe(node));
+
+const motionVideo=document.querySelector(".story-video video");
+if(motionVideo){
+  const motionObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+    if(entry.isIntersecting)motionVideo.play().catch(()=>{});else motionVideo.pause();
+  }),{threshold:.25});
+  motionObserver.observe(motionVideo);
+}
