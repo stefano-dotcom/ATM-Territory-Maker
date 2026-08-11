@@ -123,12 +123,20 @@ ATM Manager è una web app responsive utilizzabile da computer, tablet e telefon
 ## Collegamenti ufficiali
 
 - [Vetrina GitHub Pages](https://stefano-dotcom.github.io/ATM-Territory-Maker/)
+- [Presentazione dedicata ATM Version 7](https://stefano-dotcom.github.io/ATM-Territory-Maker/atm-v7.html)
+- [Presentazione dedicata ATM Bridge](https://stefano-dotcom.github.io/ATM-Territory-Maker/atm-bridge.html)
 - [ATM Manager](https://atm-manager.netlify.app/)
 - [ATM Version 7](https://atm-v7.netlify.app/)
 - [Pagina di ATM Bridge](https://atm-v7.netlify.app/website/)
 - [ATM Bridge per Firefox](https://addons.mozilla.org/it/firefox/addon/atm-bridge/)
 - [Pacchetto ATM Bridge per Chrome](https://raw.githubusercontent.com/stefano-dotcom/ATM-Territory-Maker/main/downloads/atm-bridge-v0.7.3.zip)
 - [Supporto via email](mailto:atmsupportcentre@gmail.com)
+
+## Guida pubblica dell’ecosistema
+
+La vetrina include una guida interattiva dedicata ad ATM Version 7, ATM Bridge e ATM Manager. La guida risponde da una knowledge base locale e verificata che documenta flusso, installazione, ruoli, Space, privacy, sicurezza, MFA e permessi dell’estensione.
+
+La guida non usa credenziali o chiavi API, non accede a Supabase e non può leggere account, password, sessioni, file o territori. Quando una risposta non è documentata, indirizza al supporto invece di generare informazioni non verificate.
 
 ## Repository pubblico di presentazione
 
