@@ -15,10 +15,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <title>ATM Territory Ecosystem — Version 7, Bridge &amp; Manager</title>
   <link rel="icon" href="assets/atm-manager-logo.png">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="suite.css">
-  <link rel="stylesheet" href="ecosystem.css">
-  <link rel="stylesheet" href="assistant.css">
+  <link rel="stylesheet" href="styles.css?v=20260811-4">
+  <link rel="stylesheet" href="suite.css?v=20260811-4">
+  <link rel="stylesheet" href="ecosystem.css?v=20260811-4">
+  <link rel="stylesheet" href="assistant.css?v=20260811-4">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -47,6 +47,7 @@
       <a href="#how-it-works" data-i18n="navHow">Come funziona</a>
       <a href="#roles" data-i18n="navRoles">Ruoli</a>
       <a href="#security" data-i18n="navSecurity">Sicurezza</a>
+      <a class="nav-ai" href="#ai-guide">✦ AI Guide</a>
     </nav>
     <div class="top-actions">
       <button id="languageButton" class="language" type="button" aria-label="Cambia lingua">IT</button>
@@ -63,6 +64,7 @@
         <div class="hero-actions">
           <a class="button button-primary" href="https://atm-manager.netlify.app/" target="_blank" rel="noopener"><span data-i18n="enterWorkspace">Entra nel workspace</span><span>↗</span></a>
           <a class="button button-quiet" href="#suite"><span data-i18n="discover">Scopri i tre prodotti</span><span>↓</span></a>
+          <button class="button button-ai" type="button" data-open-atm-guide><span>✦ Chiedi all’AI ATM</span><span>↗</span></button>
         </div>
         <div class="trust"><span data-i18n="webApp">Web app responsive</span><span data-i18n="roleAccess">Accesso per ruoli</span><span data-i18n="privateSpaces">Space separati</span></div>
       </div>
@@ -107,7 +109,7 @@
       </div>
       <div class="suite-grid">
         <article class="suite-card suite-manager">
-          <div class="suite-card-top"><span class="suite-brand-mark"><b>ATM</b><img src="assets/atm-manager-logo.png" alt="ATM Manager"></span><span>WORKSPACE OPERATIVO</span></div>
+          <div class="suite-card-top"><span class="suite-brand-lockup"><span class="suite-brand-mark" aria-hidden="true"><b>ATM</b></span><strong>ATM Manager</strong></span><span>WORKSPACE OPERATIVO</span></div>
           <div class="suite-visual manager-visual" aria-hidden="true">
             <div class="manager-orbit manager-orbit-one"></div><div class="manager-orbit manager-orbit-two"></div>
             <div class="manager-core"><img src="assets/atm-manager-logo.png" alt=""><b>ATM Manager</b><small>Territory Operations</small></div>
@@ -121,7 +123,7 @@
 
         <article class="suite-card suite-v7">
           <div class="suite-card-top">
-            <span class="suite-brand-mark suite-brand-wide"><b>ATM v7</b><img src="assets/atm-v7-logo.png" alt="ATM Version 7"></span>
+            <span class="suite-brand-lockup"><span class="suite-brand-mark" aria-hidden="true"><b>ATM</b></span><strong>ATM v7</strong></span>
             <span data-i18n="creativeModule">MODULO CREATIVO</span>
           </div>
           <div class="suite-visual v7-visual" aria-hidden="true">
@@ -142,7 +144,7 @@
 
         <article class="suite-card suite-bridge">
           <div class="suite-card-top">
-            <span class="suite-brand-lockup"><span class="suite-brand-mark"><b>ATM</b><img src="assets/atm-bridge-logo.png" alt="ATM Bridge"></span><strong>Bridge</strong></span>
+            <span class="suite-brand-lockup"><span class="suite-brand-mark" aria-hidden="true"><b>ATM</b></span><strong>ATM Bridge</strong></span>
             <span data-i18n="browserExtension">ESTENSIONE FIREFOX</span>
           </div>
           <div class="suite-visual bridge-visual" aria-hidden="true">
@@ -171,6 +173,11 @@
         <strong>→</strong>
         <span><b>03</b><i>ATM Manager</i><small data-i18n="flowManage">Organizza e gestisce</small></span>
       </div>
+      <a class="ai-entry" href="#ai-guide">
+        <span class="ai-entry-orb ai-entry-video"><video src="assets/ai-animation-flow-1.mp4?v=20260811-4" autoplay muted loop playsinline preload="metadata"></video><i></i><b>AI</b></span>
+        <span><small>ATM ECOSYSTEM GUIDE</small><strong>Chiedi qualsiasi cosa sull’intero ecosistema.</strong><em>Manager, Version 7, Bridge, installazione, sicurezza, privacy e dati.</em></span>
+        <b>Scopri la guida <i>↘</i></b>
+      </a>
     </section>
 
     <section class="product-depth section" id="products">
@@ -202,10 +209,11 @@
       </article>
 
       <article class="product-story story-v7">
-        <div class="story-media story-video">
-          <video muted loop playsinline preload="metadata" poster="assets/atm-v7-logo.png" aria-label="Animazione introduttiva ATM Version 7">
-            <source src="assets/atm-v7-intro.mp4" type="video/mp4">
+        <div class="story-media story-video needs-play">
+          <video src="assets/atm-v7-intro.mp4?v=20260811-4" autoplay muted loop playsinline preload="auto" controls data-autoplay-video aria-label="Animazione introduttiva ATM Version 7">
+            <source src="assets/atm-v7-intro.mp4?v=20260811-4" type="video/mp4">
           </video>
+          <button class="video-play-button" type="button" data-video-play><span>▶</span> Riproduci intro</button>
           <div class="video-caption"><span><i></i>ATM VERSION 7</span><small data-i18n="v7MotionCaption">Dal concetto al territorio</small></div>
         </div>
         <div class="story-copy">
@@ -316,6 +324,27 @@
       <div class="security-panel"><div><span>01</span><b data-i18n="secureSpaces">Separazione degli Space</b><i>ACTIVE</i></div><div><span>02</span><b data-i18n="secureMfa">MFA e passkey</b><i>ACTIVE</i></div><div><span>03</span><b data-i18n="secureAudit">Audit delle attività</b><i>ACTIVE</i></div><div><span>04</span><b data-i18n="secureApproval">Approvazione controllata</b><i>ACTIVE</i></div></div>
     </section>
 
+    <section class="ai-showcase section" id="ai-guide">
+      <div class="ai-showcase-media needs-play" aria-label="ATM Ecosystem AI Guide">
+        <video src="assets/ai-animation-flow-1.mp4?v=20260811-4" autoplay muted loop playsinline preload="auto" data-autoplay-video>
+          <source src="assets/ai-animation-flow-1.mp4?v=20260811-4" type="video/mp4">
+        </video>
+        <button class="video-play-button" type="button" data-video-play><span>▶</span> Riproduci AI</button>
+        <div class="ai-showcase-status"><span><i></i> ATM ECOSYSTEM GUIDE</span><small>Verified local knowledge</small></div>
+      </div>
+      <div class="ai-showcase-copy">
+        <p class="eyebrow">ATM AI GUIDE</p>
+        <h2>Una guida che conosce l’intero ecosistema.</h2>
+        <p>ATM Ecosystem Guide spiega ATM Manager, ATM Version 7 e ATM Bridge dalla A alla Z: flussi operativi, installazione, ruoli, sicurezza, privacy e trattamento dei dati.</p>
+        <ul>
+          <li><b>01</b><span><strong>Conoscenza verificata</strong><small>Le risposte provengono dalla documentazione pubblica del progetto.</small></span></li>
+          <li><b>02</b><span><strong>Privacy by design</strong><small>Non accede ad account, password, file, sessioni o database.</small></span></li>
+          <li><b>03</b><span><strong>Subito disponibile</strong><small>Puoi aprirla da qualsiasi pagina della vetrina.</small></span></li>
+        </ul>
+        <button class="story-link ai-showcase-button" type="button" data-open-atm-guide><span>Chiedi alla guida ATM</span><span>↗</span></button>
+      </div>
+    </section>
+
     <section class="cta section">
       <p class="eyebrow"><i></i><span data-i18n="ready">WORKSPACE PRONTO</span></p>
       <h2 data-i18n="ctaTitle">Il territorio è complesso.<br><em>Gestirlo non deve esserlo.</em></h2>
@@ -339,7 +368,63 @@
     <p>ATM Version 7 · ATM Bridge · ATM Manager · © 2026</p>
     <div><a href="https://atm-v7.netlify.app/" target="_blank" rel="noopener">ATM v7</a><a href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">ATM Bridge</a><a href="https://atm-manager.netlify.app/" target="_blank" rel="noopener">ATM Manager</a><a href="mailto:atmsupportcentre@gmail.com" data-i18n="support">Supporto</a></div>
   </footer>
-  <script src="script.js"></script>
-  <script src="assistant.js"></script>
+  <script src="script.js?v=20260811-4"></script>
+  <script src="assistant.js?v=20260811-4"></script>
+  <script>
+    document.querySelectorAll('[data-autoplay-video]').forEach(function (video) {
+      video.muted = true;
+      video.defaultMuted = true;
+      var frame = video.parentElement;
+      var button = frame && frame.querySelector('[data-video-play]');
+      var confirmPlayback = function () {
+        if (video.currentTime > 0 && !video.paused && !video.ended) {
+          frame.classList.add('is-playing');
+          frame.classList.remove('needs-play');
+        }
+      };
+      var start = function () {
+        frame.classList.add('needs-play');
+        var promise = video.play();
+        if (promise) promise.then(confirmPlayback).catch(function () {
+          frame.classList.remove('is-playing');
+          frame.classList.add('needs-play');
+        });
+      };
+      video.addEventListener('playing', confirmPlayback);
+      video.addEventListener('timeupdate', confirmPlayback);
+      video.addEventListener('pause', function () {
+        if (!document.hidden) {
+          frame.classList.remove('is-playing');
+          frame.classList.add('needs-play');
+        }
+      });
+      video.addEventListener('stalled', function () { frame.classList.add('needs-play'); });
+      video.addEventListener('error', function () { frame.classList.add('needs-play'); });
+      if (button) button.addEventListener('click', start);
+      frame.addEventListener('click', function (event) {
+        if (event.target.closest('button, a')) return;
+        if (video.paused) start();
+      });
+      if (video.readyState >= 2) start();
+      else {
+        video.addEventListener('loadeddata', start, { once: true });
+        video.addEventListener('canplay', start, { once: true });
+      }
+      document.addEventListener('visibilitychange', function () {
+        if (!document.hidden) start();
+      });
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) { if (entry.isIntersecting) start(); });
+        }, { threshold: .35 }).observe(frame);
+      }
+    });
+    function revealHashSection() {
+      if (!location.hash) return;
+      var target = document.querySelector(location.hash);
+      if (target) target.scrollIntoView({ block: 'start' });
+    }
+    window.addEventListener('load', function () { setTimeout(revealHashSection, 180); });
+  </script>
 </body>
 </html>
