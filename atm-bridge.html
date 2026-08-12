@@ -1,9 +1,119 @@
-<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070b08"><meta name="description" content="ATM Bridge: l’estensione assistita per trasferire i territori generati da ATM verso Territory Helper."><title>ATM Bridge — Assisted Transfer</title><link rel="icon" href="assets/atm-bridge-logo.png"><link rel="stylesheet" href="product-pages.css"><link rel="stylesheet" href="assistant.css"></head><body class="product-page" data-product="bridge">
-<header class="product-nav"><a class="product-brand" href="index.html"><img src="assets/atm-bridge-logo.png" alt=""><span><b>ATM Bridge</b><small>Territory Helper connector</small></span></a><nav class="product-nav-links"><a href="#overview">Panoramica</a><a href="#workflow">Flusso</a><a href="#permissions">Permessi</a><a href="#install">Installa</a></nav><a class="nav-cta" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">Installa ↗</a></header>
-<main><section class="product-hero"><div><p class="hero-kicker">ATM ECOSYSTEM · ASSISTED CONNECTION</p><h1>Il passaggio.<br><em>Sotto controllo.</em></h1><p class="hero-lead">ATM Bridge riconosce il GeoJSON generato da ATM, lo conserva temporaneamente nel browser, avvisa l’utente e prepara l’apertura di Territory Helper solo dopo la conferma.</p><div class="hero-actions"><a class="hero-cta" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">Installa per Firefox ↗</a><a class="nav-ghost" href="#install">Tutte le opzioni ↓</a></div><div class="hero-proof"><span>Conferma visibile</span><span>Notifica browser</span><span>GeoJSON</span><span>Firefox · Chrome desktop</span></div></div><div class="extension-window"><div class="extension-head"><img src="assets/atm-bridge-logo.png" alt=""><span><b>ATM Bridge</b><small>Territory Helper connector</small></span><i class="extension-light"></i></div><div class="extension-file"><i>GEO</i><span><b>ATM_Territories.geojson</b><small>Ready for transfer</small></span><strong>✓</strong></div><div class="extension-progress"><i></i></div><span class="extension-button">Continue to Territory Helper</span></div></section>
-<section class="product-section" id="overview"><div class="section-head"><div><p class="section-kicker">01 · THE BRIDGE</p><h2>Assiste il trasferimento. Non sostituisce la scelta.</h2></div><p>L’estensione mette in comunicazione le pagine supportate di ATM e Territory Helper. Rileva l’esportazione, mantiene uno stato “pronto” e permette all’utente di continuare o annullare.</p></div><div class="feature-grid"><article class="feature-card"><b>DETECT</b><h3>Rileva il file pronto</h3><p>Intercetta il payload GeoJSON prodotto da ATM e valida il formato previsto prima di renderlo disponibile.</p></article><article class="feature-card"><b>CONFIRM</b><h3>Informa prima di agire</h3><p>Mostra nome, quantità e stato nel popup, oltre a una notifica di sistema quando consentita.</p></article><article class="feature-card"><b>CONTINUE</b><h3>Guida alla destinazione</h3><p>Riusa la scheda corretta oppure apre Territory Helper, evitando duplicazioni inutili e lasciando il controllo all’utente.</p></article></div></section>
-<section class="product-section" id="workflow"><div class="section-head"><div><p class="section-kicker">02 · WORKFLOW</p><h2>Dal file alla pagina giusta.</h2></div><p>Il meccanismo è pensato per gestire anche ATM o Territory Helper già aperti: cerca le schede esistenti, attiva quella più recente e aggiorna lo stato.</p></div><div class="workflow"><article><strong>01</strong><h3>Esporta</h3><p>ATM prepara il GeoJSON territoriale.</p></article><article><strong>02</strong><h3>Rileva</h3><p>Bridge registra temporaneamente il file nel browser.</p></article><article><strong>03</strong><h3>Conferma</h3><p>L’utente controlla file e numero di territori.</p></article><article><strong>04</strong><h3>Continua</h3><p>Bridge apre o riusa Territory Helper.</p></article></div></section>
-<section class="product-section light" id="permissions"><div class="section-head"><div><p class="section-kicker">03 · PRIVACY E PERMESSI</p><h2>Permessi spiegati, non nascosti.</h2></div><p>Le informazioni seguenti derivano dal manifest dell’estensione 0.7.3. I permessi servono al flusso dichiarato; non equivalgono a una raccolta indiscriminata di dati.</p></div><div class="truth-grid"><article class="truth-panel"><h3>Perché sono richiesti</h3><div class="truth-list"><div><b>Storage locale</b><span>Conserva temporaneamente il trasferimento in sospeso e lo stato del popup.</span></div><div><b>Schede e scripting</b><span>Individua, apre, attiva e aggiorna le pagine supportate di ATM e Territory Helper.</span></div><div><b>Notifiche</b><span>Avvisa quando il file è pronto; l’utente può poi aprire l’estensione.</span></div></div></article><article class="truth-panel dark"><h3>Ambito dichiarato</h3><div class="truth-list"><div><b>Host limitati</b><span>ATM v7, localhost/file per lo sviluppo e i domini Territory Helper indicati nel manifest.</span></div><div><b>Nessuna password richiesta</b><span>ATM Bridge non chiede le credenziali di Territory Helper e non deve essere usato per condividerle.</span></div><div><b>Firefox: raccolta richiesta “none”</b><span>Il manifest Firefox dichiara che l’estensione non richiede categorie di raccolta dati.</span></div></div></article></div></section>
-<section class="product-section" id="install"><div class="section-head"><div><p class="section-kicker">04 · INSTALLAZIONE</p><h2>Scegli il browser desktop.</h2></div><p>Firefox offre l’installazione dalla pagina pubblica Add-ons. Su Chrome il pacchetto viene caricato manualmente in modalità sviluppatore; i browser mobili non offrono lo stesso flusso desktop.</p></div><div class="install-grid"><article class="install-card"><p class="section-kicker">FIREFOX</p><h3>Installazione pubblica</h3><p>Apri la pagina ufficiale, scegli “Aggiungi a Firefox” e approva i permessi mostrati dal browser.</p><a class="hero-cta" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">Firefox Add-ons ↗</a></article><article class="install-card"><p class="section-kicker">CHROME</p><h3>Pacchetto manuale</h3><p>Scarica lo ZIP, estrailo, apri <b>chrome://extensions</b>, abilita la modalità sviluppatore e scegli “Carica estensione non pacchettizzata”.</p><a class="hero-cta" href="https://raw.githubusercontent.com/stefano-dotcom/ATM-Territory-Maker/main/downloads/atm-bridge-v0.7.3.zip">Scarica ZIP ↓</a></article></div></section>
-<section class="final-cta"><p class="section-kicker">READY TO CONNECT</p><h2>Trasferisci con una conferma in più, non con un dubbio in più.</h2><div class="hero-actions" style="justify-content:center"><a class="hero-cta" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">Installa ATM Bridge ↗</a><a class="nav-ghost" href="atm-v7.html">Scopri ATM v7 →</a></div></section></main>
-<footer class="product-footer"><span>ATM Bridge 0.7.3 · ATM Territory Ecosystem</span><div><a href="index.html">Ecosistema</a><a href="atm-v7.html">ATM v7</a><a href="mailto:atmsupportcentre@gmail.com">Supporto</a></div></footer><script src="assistant.js"></script></body></html>
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070b08">
+  <meta name="description" content="ATM Bridge: estensione browser per accompagnare il trasferimento del GeoJSON generato da ATM verso Territory Helper con conferma esplicita.">
+  <title>ATM Bridge — Assisted Transfer</title>
+  <link rel="icon" href="atm-bridge-logo.png">
+  <link rel="stylesheet" href="product-pages.css">
+  <link rel="stylesheet" href="assistant.css">
+</head>
+<body class="product-page" data-product="bridge">
+<header class="product-nav">
+  <a class="product-brand" href="index.html"><img src="atm-bridge-logo.png" alt=""><span><b>ATM Bridge</b><small>Territory Helper connector</small></span></a>
+  <nav class="product-nav-links" aria-label="ATM Bridge"><a href="#overview">Panoramica</a><a href="#workflow">Flusso</a><a href="#privacy">Privacy</a><a href="#install">Installazione</a><a href="#integration">Ecosistema</a><a href="#faq">FAQ</a></nav>
+  <div class="product-nav-actions"><button class="nav-ai" type="button" data-open-atm-guide>✦ AI Guide</button><a class="nav-cta" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">Installa ↗</a></div>
+</header>
+<main>
+  <section class="product-hero">
+    <div class="hero-copy">
+      <p class="hero-kicker">ATM ECOSYSTEM · ASSISTED CONNECTION</p>
+      <h1>Il passaggio.<br><em>Sotto controllo.</em></h1>
+      <p class="hero-lead">ATM Bridge collega la fase di creazione al passaggio verso Territory Helper: rileva il GeoJSON pronto, mantiene lo stato nel browser, informa l’utente e continua soltanto dopo una conferma visibile.</p>
+      <div class="hero-actions"><a class="hero-cta" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">Installa per Firefox ↗</a><a class="nav-ghost" href="#install">Chrome e altre opzioni ↓</a><button class="nav-ai" type="button" data-open-atm-guide>✦ Chiedi alla guida</button></div>
+      <div class="hero-proof"><span>GeoJSON detection</span><span>Conferma utente</span><span>Notifiche browser</span><span>Firefox · Chrome desktop</span></div>
+    </div>
+    <div class="bridge-hero-visual">
+      <div class="extension-window">
+        <div class="extension-head"><img src="atm-bridge-logo.png" alt=""><span><b>ATM Bridge</b><small>Territory Helper connector</small></span><i class="extension-light"></i></div>
+        <div class="extension-file"><i>GEO</i><span><b>ATM_Territories.geojson</b><small>12 territories · ready</small></span><strong>✓</strong></div>
+        <div class="extension-progress"><i></i></div>
+        <span class="extension-button">Continue to Territory Helper</span>
+        <div class="bridge-badges"><span>LOCAL STATE</span><span>USER CONFIRMATION</span><span>NO PASSWORDS</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-section" id="overview">
+    <div class="section-head"><div><p class="section-kicker">01 · COS’È ATM BRIDGE</p><h2>Assiste il trasferimento. Non prende decisioni al posto tuo.</h2></div><p>Bridge è l’elemento di connessione dell’ecosistema. Il suo lavoro è riconoscere il file preparato da ATM, mantenere il trasferimento disponibile nel browser e guidarti verso la pagina giusta senza rendere invisibile ciò che sta accadendo.</p></div>
+    <div class="feature-grid">
+      <article class="feature-card"><b>DETECT</b><h3>Rileva il file pronto</h3><p>Intercetta il payload GeoJSON prodotto dal flusso ATM e prepara uno stato di trasferimento riconoscibile.</p></article>
+      <article class="feature-card"><b>CONFIRM</b><h3>Mostra prima di continuare</h3><p>File, stato e quantità rilevata restano visibili: l’utente può verificare prima del passaggio successivo.</p></article>
+      <article class="feature-card"><b>CONNECT</b><h3>Porta alla destinazione corretta</h3><p>Bridge cerca una scheda supportata già aperta oppure prepara l’apertura di Territory Helper senza duplicazioni inutili.</p></article>
+    </div>
+  </section>
+
+  <section class="product-section soft" id="capabilities">
+    <div class="section-head"><div><p class="section-kicker">02 · COSA SUCCEDE DAVVERO</p><h2>Un piccolo componente con responsabilità precise.</h2></div><p>L’estensione non è una seconda applicazione di gestione: è un connettore. Per questo la sua pagina deve spiegare chiaramente cosa osserva, cosa conserva e quando interviene.</p></div>
+    <div class="capability-grid">
+      <article class="capability-card"><b>01 · DETECTION</b><h3>Rilevamento GeoJSON</h3><p>Bridge riconosce il dato territoriale preparato dal flusso ATM e lo rende disponibile al popup.</p><strong>Il file viene prima identificato.</strong></article>
+      <article class="capability-card"><b>02 · LOCAL STATE</b><h3>Stato temporaneo nel browser</h3><p>Il trasferimento in sospeso viene mantenuto nello storage del browser per non perderlo tra una scheda e l’altra.</p><strong>Il passaggio rimane recuperabile.</strong></article>
+      <article class="capability-card"><b>03 · NOTIFICATION</b><h3>Notifica esplicita</h3><p>Quando consentito, una notifica informa che il file è pronto invece di agire silenziosamente.</p><strong>L’utente sa quando intervenire.</strong></article>
+      <article class="capability-card"><b>04 · TABS</b><h3>Gestione delle schede</h3><p>Bridge individua una pagina supportata già aperta, la attiva oppure apre la destinazione necessaria.</p><strong>Meno schede duplicate.</strong></article>
+      <article class="capability-card"><b>05 · CONFIRMATION</b><h3>Conferma prima del passaggio</h3><p>Il flusso è progettato perché l’utente controlli ciò che è stato rilevato prima di continuare.</p><strong>Niente trasferimento “misterioso”.</strong></article>
+      <article class="capability-card"><b>06 · CONNECTOR</b><h3>Un ruolo solo, fatto bene</h3><p>Bridge non assegna territori e non gestisce account: collega la creazione al passaggio verso Territory Helper.</p><strong>Responsabilità separata dal Manager.</strong></article>
+    </div>
+  </section>
+
+  <section class="product-section" id="workflow">
+    <div class="section-head"><div><p class="section-kicker">03 · WORKFLOW</p><h2>Dal GeoJSON alla pagina giusta, con una conferma in mezzo.</h2></div><p>La sequenza rende il trasferimento leggibile: prima il dato viene prodotto, poi rilevato, poi verificato dall’utente e soltanto dopo Bridge prepara la destinazione.</p></div>
+    <div class="workflow">
+      <article><strong>01 · EXPORT</strong><h3>ATM esporta</h3><p>v7 o il flusso ATM prepara il GeoJSON territoriale.</p></article>
+      <article><strong>02 · DETECT</strong><h3>Bridge rileva</h3><p>L’estensione registra il trasferimento e lo rende disponibile nel browser.</p></article>
+      <article><strong>03 · INFORM</strong><h3>Ti informa</h3><p>Popup e notifica mostrano che il file è pronto e quanti territori sono stati trovati.</p></article>
+      <article><strong>04 · CONFIRM</strong><h3>Confermi</h3><p>Controlli il file e scegli se continuare invece di subire un’azione automatica.</p></article>
+      <article><strong>05 · CONTINUE</strong><h3>Bridge continua</h3><p>Riusa o apre Territory Helper per il passaggio successivo.</p></article>
+    </div>
+  </section>
+
+  <section class="product-section light" id="privacy">
+    <div class="section-head"><div><p class="section-kicker">04 · PRIVACY E PERMESSI</p><h2>Ogni permesso deve avere una ragione comprensibile.</h2></div><p>La vetrina descrive i permessi dichiarati dalla versione 0.7.3 e il loro ruolo nel trasferimento. Un permesso tecnico non significa automaticamente raccolta indiscriminata di dati.</p></div>
+    <div class="truth-grid">
+      <article class="truth-panel"><h3>Permessi funzionali</h3><div class="truth-list"><div><b>storage / unlimitedStorage</b><span>Mantengono temporaneamente il trasferimento e lo stato necessario al popup.</span></div><div><b>tabs</b><span>Serve a individuare, attivare o aprire le pagine supportate.</span></div><div><b>scripting</b><span>Permette all’estensione di collaborare con le pagine dichiarate nel proprio ambito.</span></div><div><b>notifications</b><span>Avvisa l’utente quando il file è pronto per essere controllato.</span></div></div></article>
+      <article class="truth-panel dark"><h3>Limiti dichiarati</h3><div class="truth-list"><div><b>Host specifici</b><span>L’ambito riguarda ATM v7, ambienti locali di sviluppo e domini Territory Helper dichiarati.</span></div><div><b>Nessuna password richiesta</b><span>Bridge non deve chiedere o raccogliere le credenziali di Territory Helper.</span></div><div><b>Firefox: data collection “none”</b><span>Il manifest Firefox documentato dalla vetrina dichiara raccolta dati richiesta “none”.</span></div><div><b>Guida AI separata</b><span>Il chatbot della vetrina non accede all’estensione, allo storage o ai file trasferiti.</span></div></div></article>
+    </div>
+  </section>
+
+  <section class="product-section" id="install">
+    <div class="section-head"><div><p class="section-kicker">05 · INSTALLAZIONE</p><h2>Firefox in un click. Chrome in modalità sviluppatore.</h2></div><p>Bridge è pensato per il flusso desktop. Firefox dispone di una pagina pubblica Add-ons; su Chrome il pacchetto viene installato manualmente come estensione non pacchettizzata.</p></div>
+    <div class="install-grid">
+      <article class="install-card"><p class="section-kicker">FIREFOX · CONSIGLIATO</p><h3>Installazione pubblica</h3><p>Usa la pagina ufficiale Firefox Add-ons per installare ATM Bridge e visualizzare i permessi richiesti dal browser.</p><ol><li>Apri Firefox Add-ons.</li><li>Scegli “Aggiungi a Firefox”.</li><li>Controlla e approva i permessi mostrati.</li></ol><a class="hero-cta" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">Firefox Add-ons ↗</a></article>
+      <article class="install-card"><p class="section-kicker">CHROME · DESKTOP</p><h3>Pacchetto manuale</h3><p>Su Chrome desktop l’estensione viene caricata dalla cartella estratta utilizzando la modalità sviluppatore.</p><ol><li>Scarica ed estrai lo ZIP.</li><li>Apri chrome://extensions.</li><li>Abilita Modalità sviluppatore.</li><li>Scegli “Carica estensione non pacchettizzata”.</li></ol><a class="hero-cta" href="https://raw.githubusercontent.com/stefano-dotcom/ATM-Territory-Maker/main/downloads/atm-bridge-v0.7.3.zip">Scarica ZIP ↓</a></article>
+    </div>
+  </section>
+
+  <section class="product-section soft" id="integration">
+    <div class="section-head"><div><p class="section-kicker">06 · DENTRO L’ECOSISTEMA</p><h2>Bridge vive nel mezzo. Ed è proprio lì che serve.</h2></div><p>Il prodotto ha senso perché non prova a fare il lavoro degli altri due: riceve un risultato creato da v7 e prepara il passaggio, mentre Manager rimane il centro della gestione operativa.</p></div>
+    <div class="ecosystem-chain">
+      <article class="chain-card"><small>01 · CREATE</small><h3>ATM Version 7</h3><p>Genera e controlla la struttura geografica dei territori.</p><a href="atm-v7.html">Scopri v7 →</a></article>
+      <article class="chain-card active"><small>02 · CONNECT</small><h3>ATM Bridge</h3><p>Rileva, informa, conferma e accompagna il GeoJSON verso Territory Helper.</p><a href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">Installa Bridge ↗</a></article>
+      <article class="chain-card"><small>03 · MANAGE</small><h3>ATM Manager</h3><p>Gestisce Space, persone, territori, richieste, assegnazioni, restituzioni e sicurezza.</p><a href="https://atm-manager.netlify.app/" target="_blank" rel="noopener">Apri Manager ↗</a></article>
+    </div>
+  </section>
+
+  <section class="product-section light" id="limits">
+    <div class="section-head"><div><p class="section-kicker">07 · COSA NON FA</p><h2>Un connettore è più affidabile quando i suoi limiti sono chiari.</h2></div><p>La pagina ora distingue ciò che Bridge facilita da ciò che rimane responsabilità dell’utente o degli altri prodotti.</p></div>
+    <div class="limit-grid">
+      <article class="limit-panel"><h3>Bridge fa</h3><div class="truth-list"><div><b>Rilevamento</b><span>Individua il GeoJSON pronto nel flusso supportato.</span></div><div><b>Stato e notifica</b><span>Mantiene il trasferimento disponibile e informa l’utente.</span></div><div><b>Gestione delle schede</b><span>Riusa o apre la destinazione supportata quando confermi.</span></div></div></article>
+      <article class="limit-panel dark"><h3>Bridge non fa</h3><div class="truth-list"><div><b>Non assegna territori</b><span>Questa è una responsabilità di ATM Manager.</span></div><div><b>Non crea la geometria</b><span>La creazione appartiene ad ATM Version 7.</span></div><div><b>Non richiede password</b><span>Non deve diventare un punto di raccolta di credenziali di Territory Helper.</span></div></div></article>
+    </div>
+  </section>
+
+  <section class="product-section" id="faq">
+    <div class="section-head"><div><p class="section-kicker">08 · FAQ</p><h2>Installazione, privacy e ruolo del prodotto.</h2></div><p>Le domande principali riguardano proprio ciò che un’estensione può fare nel browser. Qui il comportamento viene spiegato senza nascondersi dietro termini tecnici.</p></div>
+    <div class="faq-list">
+      <details><summary>ATM Bridge importa automaticamente senza chiedere?</summary><p>No. Il flusso documentato mantiene una conferma esplicita prima di continuare verso Territory Helper.</p></details>
+      <details><summary>Perché usa il permesso tabs?</summary><p>Serve a cercare una pagina supportata già aperta, attivarla oppure aprire la destinazione corretta quando necessario.</p></details>
+      <details><summary>Funziona su Chrome mobile?</summary><p>Il flusso documentato è pensato per browser desktop. L’installazione manuale descritta per Chrome usa chrome://extensions e Modalità sviluppatore.</p></details>
+      <details><summary>Il chatbot della vetrina può vedere il file trasferito?</summary><p>No. La guida pubblica usa una knowledge base locale e non accede allo storage dell’estensione, agli account o ai file dell’utente.</p></details>
+    </div>
+  </section>
+
+  <section class="final-cta"><p class="section-kicker">READY TO CONNECT</p><h2>Trasferisci con una conferma in più, non con un dubbio in più.</h2><p>Bridge rimane piccolo, visibile e comprensibile: esattamente ciò che dovrebbe essere un connettore tra due fasi del flusso.</p><div class="hero-actions" style="justify-content:center"><a class="hero-cta" href="https://addons.mozilla.org/it/firefox/addon/atm-bridge/" target="_blank" rel="noopener">Installa ATM Bridge ↗</a><a class="nav-ghost" href="atm-v7.html">Torna ad ATM v7 →</a></div></section>
+</main>
+<footer class="product-footer"><span>ATM Bridge 0.7.3 · ATM Territory Ecosystem</span><div><a href="index.html">Ecosistema</a><a href="atm-v7.html">ATM v7</a><a href="https://atm-manager.netlify.app/" target="_blank" rel="noopener">Manager</a><a href="mailto:atmsupportcentre@gmail.com">Supporto</a></div></footer>
+<script src="assistant.js"></script>
+</body>
+</html>
