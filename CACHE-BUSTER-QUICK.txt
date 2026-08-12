@@ -1,0 +1,25 @@
+HOME (index.html)
+-----------------
+Change:
+assistant.css?v=20260811-4
+To:
+assistant.css?v=20260812-wow3
+
+Change:
+assistant.js?v=20260811-4
+To:
+assistant.js?v=20260812-wow3
+
+OPTIONAL: you can replace ALL ?v=20260811-4 occurrences in index.html with ?v=20260812-wow3.
+
+ATM V7 + ATM BRIDGE PAGES
+-------------------------
+Change:
+<link rel="stylesheet" href="assistant.css">
+To:
+<link rel="stylesheet" href="assistant.css?v=20260812-wow3">
+
+Change:
+<script src="assistant.js"></script>
+To:
+<script src="assistant.js?v=20260812-wow3"></script>
