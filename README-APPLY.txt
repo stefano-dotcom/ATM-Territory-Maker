@@ -1,43 +1,58 @@
-ATM SHOWCASE — WOW V3
-=====================
+ATM ECOSYSTEM GUIDE — SMART V4
+=================================
 
-FILES TO REPLACE
-1. assistant.css
-2. assistant.js
+Questa V4 NON sostituisce la WOW V3: la potenzia.
 
-IMPORTANT CACHE STEP (recommended)
-In index.html replace every occurrence of:
-  ?v=20260811-4
-with:
-  ?v=20260812-wow3
+COSA CAMBIA
+-----------
+• Capisce prodotto + intento + browser + follow-up.
+• Ricorda il contesto locale della conversazione.
+• Evita di ripetere lo stesso identico paragrafo.
+• Se ripeti una domanda, aggiunge un dettaglio nuovo.
+• Cerca anche nel testo della pagina quando la knowledge base non basta.
+• Suggerimenti dinamici dopo ogni risposta.
+• Responsive completo per mobile, tablet e landscape.
+• Gestione della tastiera mobile con VisualViewport.
+• Safe-area iPhone / notch / gesture bar.
+• Il campo input usa 16px su mobile per evitare lo zoom automatico iOS.
 
-For atm-v7.html and atm-bridge.html, change:
-  assistant.css
-into:
-  assistant.css?v=20260812-wow3
+INSTALLAZIONE
+-------------
+1. Carica `assistant-v4.js` nella ROOT del repository, accanto ad `assistant.js`.
 
-and change:
-  assistant.js
-into:
-  assistant.js?v=20260812-wow3
+2. In `index.html`, subito DOPO la riga che carica assistant.js, aggiungi:
 
-Then upload the two replacement files and the edited HTML files to GitHub.
-After GitHub Pages deploys, use Ctrl+F5 once.
+   <script src="assistant-v4.js?v=20260812-1"></script>
 
-WHAT WOW V3 ADDS
-- AI launcher physically disappears (display:none) while chat is open.
-- Inline failsafe makes the fix work even if part of the CSS is cached.
-- High-contrast buttons/links on light sections.
-- New cinematic LIVE FLOW section automatically injected on the home page.
-- Animated ATM v7 map: territories draw/pulse and cursor travels between them.
-- Animated GeoJSON packet moves from v7 to Bridge to Manager.
-- ATM Bridge demo detects the file, progresses and confirms it.
-- ATM Manager live mini-dashboard lights up at the end of the flow.
-- AI section no longer depends on the missing video: it becomes a live animated AI core.
-- Floating v7 / Bridge / Manager orbit nodes and data particles feed the AI core.
-- Premium hover depth, glow tracking and scroll reveals.
-- Product pages receive ambient lighting and animated Bridge details.
-- AI guide keeps conversational context and is more robust on follow-up questions.
+3. Fai la stessa cosa in:
+   - atm-v7.html
+   - atm-bridge.html
 
-NO NEW VIDEO FILE IS REQUIRED.
-The illustrative 'video-like' sequence is rendered live in HTML/CSS/JS, so it is sharp on every screen and does not need an MP4 download.
+Esempio:
+
+   <script src="assistant.js?v=20260812-wow3"></script>
+   <script src="assistant-v4.js?v=20260812-1"></script>
+
+IMPORTANTE
+----------
+`assistant-v4.js` deve essere caricato DOPO `assistant.js`.
+Non eliminare assistant.js: contiene la UI e le animazioni WOW V3.
+
+Dopo l'upload:
+• fai Ctrl + F5 su desktop;
+• su telefono chiudi e riapri la scheda oppure svuota la cache del sito.
+
+TEST CONSIGLIATO
+----------------
+Apri il chatbot e prova questa conversazione:
+
+1. Cos'è ATM Bridge?
+2. Come lo installo?
+3. Su Chrome
+4. Perché usa quei permessi?
+5. È sicuro?
+6. E dopo il trasferimento?
+7. E ATM Manager cosa fa invece?
+
+Le risposte devono cambiare seguendo il contesto, senza ripetere sempre
+lo stesso paragrafo.
