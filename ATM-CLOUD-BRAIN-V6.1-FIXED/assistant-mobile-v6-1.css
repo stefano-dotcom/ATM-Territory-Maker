@@ -1,0 +1,272 @@
+/* =========================================================
+   ATM CHAT — MOBILE/RESPONSIVE HARD FIX V6.1
+   Load AFTER assistant.css.
+   ========================================================= */
+
+*,*::before,*::after{box-sizing:border-box}
+
+body.atm-guide-open{
+  overflow:hidden!important;
+  overscroll-behavior:none!important;
+  touch-action:none;
+}
+
+body.atm-guide-open .atm-guide-launcher,
+.atm-guide-shell.is-open ~ .atm-guide-launcher{
+  display:none!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  pointer-events:none!important;
+}
+
+.atm-guide-shell{
+  --atm-visible-height:100dvh;
+  position:fixed!important;
+  inset:0!important;
+  z-index:2147483000!important;
+  width:100vw!important;
+  max-width:100vw!important;
+  height:var(--atm-visible-height)!important;
+  max-height:var(--atm-visible-height)!important;
+  margin:0!important;
+  overflow:hidden!important;
+  padding:clamp(10px,2vw,24px)!important;
+}
+
+.atm-guide-shell.is-open{
+  display:flex!important;
+  align-items:flex-end!important;
+  justify-content:flex-end!important;
+}
+
+.atm-guide{
+  min-width:0!important;
+  min-height:0!important;
+  width:min(470px,calc(100vw - 2 * clamp(10px,2vw,24px)))!important;
+  max-width:100%!important;
+  height:min(760px,calc(var(--atm-visible-height) - 2 * clamp(10px,2vw,24px)))!important;
+  max-height:100%!important;
+  display:grid!important;
+  grid-template-rows:auto minmax(0,1fr) auto!important;
+  overflow:hidden!important;
+}
+
+.atm-guide-head,
+.atm-guide-title,
+.atm-guide-feed,
+.atm-guide-form,
+.atm-guide-message,
+.atm-guide-chips{
+  min-width:0!important;
+}
+
+.atm-guide-feed{
+  min-height:0!important;
+  overflow-x:hidden!important;
+  overflow-y:auto!important;
+  overscroll-behavior:contain!important;
+  -webkit-overflow-scrolling:touch!important;
+}
+
+.atm-guide-message{
+  width:auto!important;
+  max-width:min(90%,38rem)!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+  white-space:pre-wrap!important;
+}
+
+.atm-guide-message.user{margin-left:auto!important}
+.atm-guide-message.bot{margin-right:auto!important}
+
+.atm-guide-title b,
+.atm-guide-title small{
+  display:block;
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.atm-guide-form{
+  width:100%!important;
+  grid-template-columns:minmax(0,1fr) 48px!important;
+}
+
+.atm-guide-input{
+  width:100%!important;
+  min-width:0!important;
+}
+
+.atm-guide-note{
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+
+.atm-guide-chip{
+  max-width:min(320px,80vw);
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+/* Phone portrait + small tablets */
+@media (max-width:700px){
+  .atm-guide-shell{
+    inset:0!important;
+    width:100vw!important;
+    height:var(--atm-visible-height)!important;
+    padding:0!important;
+    background:#071008!important;
+    backdrop-filter:none!important;
+    -webkit-backdrop-filter:none!important;
+    align-items:stretch!important;
+    justify-content:stretch!important;
+  }
+
+  .atm-guide{
+    width:100vw!important;
+    max-width:100vw!important;
+    height:var(--atm-visible-height)!important;
+    max-height:var(--atm-visible-height)!important;
+    margin:0!important;
+    border:0!important;
+    border-radius:0!important;
+  }
+
+  .atm-guide-head{
+    grid-template-columns:52px minmax(0,1fr) 40px!important;
+    gap:10px!important;
+    padding:
+      max(10px,env(safe-area-inset-top))
+      max(12px,env(safe-area-inset-right))
+      10px
+      max(12px,env(safe-area-inset-left))!important;
+  }
+
+  .atm-guide-face{
+    width:52px!important;
+    height:52px!important;
+    border-radius:15px!important;
+  }
+
+  .atm-guide-title b{
+    font-size:15px!important;
+    line-height:1.15!important;
+    white-space:nowrap!important;
+  }
+
+  .atm-guide-title small{
+    margin-top:4px!important;
+    font-size:9.5px!important;
+    line-height:1.25!important;
+    white-space:nowrap!important;
+  }
+
+  .atm-guide-close{
+    width:40px!important;
+    height:40px!important;
+    min-width:40px!important;
+    padding:0!important;
+  }
+
+  .atm-guide-feed{
+    padding:
+      13px
+      max(12px,env(safe-area-inset-right))
+      11px
+      max(12px,env(safe-area-inset-left))!important;
+  }
+
+  .atm-guide-message{
+    max-width:94%!important;
+    padding:12px 13px!important;
+    font-size:14px!important;
+    line-height:1.5!important;
+  }
+
+  .atm-guide-chips{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    width:100%!important;
+    max-width:100%!important;
+    gap:7px!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    margin:10px 0 2px!important;
+    padding:2px 1px 7px!important;
+    scrollbar-width:none!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+
+  .atm-guide-chips::-webkit-scrollbar{display:none!important}
+  .atm-guide-chip{flex:0 0 auto!important}
+
+  .atm-guide-form{
+    gap:8px!important;
+    padding:
+      9px
+      max(10px,env(safe-area-inset-right))
+      max(9px,env(safe-area-inset-bottom))
+      max(10px,env(safe-area-inset-left))!important;
+  }
+
+  .atm-guide-input{
+    height:48px!important;
+    font-size:16px!important; /* prevents iOS focus zoom */
+    padding:0 13px!important;
+  }
+
+  .atm-guide-send{
+    width:48px!important;
+    min-width:48px!important;
+    height:48px!important;
+  }
+
+  .atm-guide-note{
+    grid-column:1/-1!important;
+    font-size:8.8px!important;
+    line-height:1.25!important;
+  }
+}
+
+/* Very narrow phones */
+@media (max-width:380px){
+  .atm-guide-head{
+    grid-template-columns:46px minmax(0,1fr) 38px!important;
+    gap:8px!important;
+  }
+  .atm-guide-face{width:46px!important;height:46px!important}
+  .atm-guide-title b{font-size:14px!important}
+  .atm-guide-title small{display:none!important}
+  .atm-guide-message{max-width:97%!important}
+  .atm-guide-note{display:none!important}
+}
+
+/* Tablet */
+@media (min-width:701px) and (max-width:1050px){
+  .atm-guide-shell{padding:14px!important}
+  .atm-guide{
+    width:min(560px,calc(100vw - 28px))!important;
+    height:min(800px,calc(var(--atm-visible-height) - 28px))!important;
+  }
+}
+
+/* Landscape phones / short browser windows */
+@media (max-height:620px) and (min-width:701px){
+  .atm-guide-shell{padding:7px!important}
+  .atm-guide{
+    width:min(680px,calc(100vw - 14px))!important;
+    height:calc(var(--atm-visible-height) - 14px)!important;
+  }
+  .atm-guide-head{
+    grid-template-columns:46px minmax(0,1fr) 38px!important;
+    gap:9px!important;
+    padding:7px 10px!important;
+  }
+  .atm-guide-face{width:46px!important;height:46px!important}
+  .atm-guide-title small,.atm-guide-note{display:none!important}
+  .atm-guide-feed{padding:8px 12px!important}
+  .atm-guide-message{padding:9px 11px!important;line-height:1.4!important}
+  .atm-guide-form{padding:7px 10px!important}
+  .atm-guide-chips{flex-wrap:nowrap!important;overflow-x:auto!important}
+}

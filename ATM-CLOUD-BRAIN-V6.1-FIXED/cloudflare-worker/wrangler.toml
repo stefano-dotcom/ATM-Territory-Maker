@@ -1,0 +1,31 @@
+name = "atm-cloud-brain"
+main = "worker.js"
+compatibility_date = "2026-08-01"
+
+[ai]
+binding = "AI"
+
+[vars]
+ALLOWED_ORIGIN = "https://stefano-dotcom.github.io"
+ALLOW_LOCALHOST = "false"
+REQUIRE_TURNSTILE = "true"
+TURNSTILE_HOSTNAME = "stefano-dotcom.github.io"
+SESSION_TTL = "3600"
+SMART_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+FAST_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast"
+
+[[ratelimits]]
+name = "CHAT_RATE_LIMITER"
+namespace_id = "21001"
+
+  [ratelimits.simple]
+  limit = 12
+  period = 60
+
+[[ratelimits]]
+name = "SESSION_RATE_LIMITER"
+namespace_id = "21002"
+
+  [ratelimits.simple]
+  limit = 4
+  period = 60
